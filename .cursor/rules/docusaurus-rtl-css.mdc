@@ -1,0 +1,51 @@
+---
+description: Docusaurus RTLCSS flips physical CSS — use start/end and rtl:ignore
+globs: src/css/**/*.css, src/theme/**/*.{tsx,ts,css}
+alwaysApply: true
+---
+
+# Docusaurus RTL CSS (Persian / fa)
+
+This site is RTL-only (`i18n.defaultLocale: fa`, `direction: rtl`). Docusaurus runs **RTLCSS** on CSS and flips physical values.
+
+## What gets flipped (broken if written naively)
+
+| You write | Built CSS becomes |
+| --- | --- |
+| `text-align: right` | `text-align: left` |
+| `direction: rtl` | `direction: ltr` |
+| `padding-left` / `margin-right` | swapped |
+
+This made doc **title** and **description** appear LTR until fixed.
+
+## Correct patterns
+
+Prefer **logical properties** (not flipped incorrectly):
+
+```css
+text-align: start; /* right in RTL */
+margin-inline-start: 0;
+padding-inline-end: 0;
+border-inline-start: 1px solid ...;
+```
+
+When you must force physical RTL, wrap with ignore:
+
+```css
+/*rtl:begin:ignore*/
+html[dir='rtl'] .docItemTitle,
+html[dir='rtl'] .docItemDescription {
+  text-align: right;
+  direction: rtl;
+}
+/*rtl:end:ignore*/
+```
+
+## Do not
+
+- Set `direction: rtl` on doc content without `rtl:ignore` — it becomes `ltr` and breaks Persian layout.
+- “Fix” LTR by adding more `text-align: right` without checking the **built** CSS in `build/assets/css/`.
+
+## Working header pattern
+
+Doc pages use swizzled `src/theme/DocItem/Content/index.tsx` to render frontmatter `title` + `description` as `.docItemTitle` / `.docItemDescription`, styled with the `rtl:ignore` block in `src/css/custom.css`.
