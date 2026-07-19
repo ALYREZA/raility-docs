@@ -1,0 +1,13 @@
+node_modules
+build
+.docusaurus
+.cache-loader
+.git
+.github
+.cursor
+.DS_Store
+.env*
+*.log
+.idea
+.vscode
+README.md

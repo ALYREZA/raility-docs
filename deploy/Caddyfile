@@ -1,0 +1,4 @@
+help.riality.app {
+	encode gzip
+	reverse_proxy docs:80
+}

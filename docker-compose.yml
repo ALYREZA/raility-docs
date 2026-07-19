@@ -1,0 +1,25 @@
+services:
+  docs:
+    image: ghcr.io/alyreza/raility-docs:latest
+    restart: unless-stopped
+    # Uncomment to build locally instead of pulling:
+    # build: .
+    expose:
+      - "80"
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - docs
+
+volumes:
+  caddy_data:
+  caddy_config:
