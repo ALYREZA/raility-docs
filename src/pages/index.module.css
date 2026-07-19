@@ -1,0 +1,127 @@
+.heroBanner {
+  padding: 2.75rem 1rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(165deg, #2a9486 0%, #247f73 35%, #18564f 70%, #123a36 100%);
+  color: #fff;
+}
+
+.heroGlow {
+  position: absolute;
+  inset: -40% -20% auto;
+  height: 120%;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(181, 224, 215, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.12) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.heroBadgeRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(6px);
+}
+
+.heroTitle {
+  font-size: 2.35rem;
+  font-weight: 800;
+  margin-bottom: 0.65rem;
+  letter-spacing: -0.02em;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.96;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.heroLead {
+  font-size: 1rem;
+  line-height: 1.9;
+  opacity: 0.92;
+  margin: 0 auto 1.25rem;
+  max-width: 32rem;
+}
+
+.heroHighlights {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0 auto 1.75rem;
+  padding: 0;
+}
+
+.heroHighlights li {
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.primaryCta {
+  font-weight: 700;
+  border: none;
+}
+
+.secondaryCta {
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.secondaryCta:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff !important;
+}
+
+@media screen and (min-width: 768px) {
+  .heroBanner {
+    padding: 4.5rem 1.5rem 4.75rem;
+  }
+
+  .heroTitle {
+    font-size: 3rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.25rem;
+  }
+
+  .heroLead {
+    font-size: 1.08rem;
+  }
+}

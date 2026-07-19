@@ -1,0 +1,309 @@
+/**
+ * ریالیتی help — Farsi RTL, Estedad, teal brand, mobile-first.
+ */
+
+@font-face {
+  font-family: 'Estedad';
+  src: url('/fonts/Estedad-Thin.ttf') format('truetype');
+  font-weight: 100 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Estedad';
+  src: url('/fonts/Estedad-Regular.ttf') format('truetype');
+  font-weight: 400 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Estedad';
+  src: url('/fonts/Estedad-Bold.ttf') format('truetype');
+  font-weight: 600 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ifm-font-family-base: 'Estedad', Tahoma, 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: 'Estedad', Tahoma, 'Segoe UI', sans-serif;
+  --ifm-font-family-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --ifm-color-primary: #247f73;
+  --ifm-color-primary-dark: #1d6b61;
+  --ifm-color-primary-darker: #18564f;
+  --ifm-color-primary-darkest: #164640;
+  --ifm-color-primary-light: #55aa9d;
+  --ifm-color-primary-lighter: #87cabd;
+  --ifm-color-primary-lightest: #b5e0d7;
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.75;
+  --ifm-heading-line-height: 1.4;
+  --ifm-spacing-horizontal: 1rem;
+  --ifm-container-width: 960px;
+  --ifm-container-width-xl: 1140px;
+
+  --docusaurus-highlighted-code-line-bg: rgba(36, 127, 115, 0.08);
+  --riality-surface: #f7faf9;
+  --riality-card: #ffffff;
+  --riality-border: #e3ece9;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #55aa9d;
+  --ifm-color-primary-dark: #247f73;
+  --ifm-color-primary-darker: #1d6b61;
+  --ifm-color-primary-darkest: #18564f;
+  --ifm-color-primary-light: #87cabd;
+  --ifm-color-primary-lighter: #b5e0d7;
+  --ifm-color-primary-lightest: #d8f0ea;
+  --docusaurus-highlighted-code-line-bg: rgba(85, 170, 157, 0.2);
+  --riality-surface: #0f1412;
+  --riality-card: #1a2220;
+  --riality-border: #2a3532;
+}
+
+html {
+  font-family: var(--ifm-font-family-base);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+  Docusaurus runs RTLCSS on this file for fa locale.
+  Physical values like text-align:right / direction:rtl get flipped to left/ltr.
+  Prefer logical properties (start/end) and rtl:ignore directives where needed.
+*/
+
+html[dir='rtl'] body {
+  text-align: start;
+}
+
+html[dir='rtl'] .navbar__title,
+html[dir='rtl'] .navbar__link,
+html[dir='rtl'] .menu__link,
+html[dir='rtl'] .table-of-contents__link,
+html[dir='rtl'] .footer__title,
+html[dir='rtl'] .footer__link-item,
+html[dir='rtl'] .breadcrumbs__link,
+html[dir='rtl'] .pagination-nav__label,
+html[dir='rtl'] .pagination-nav__sublabel {
+  font-family: var(--ifm-font-family-base);
+}
+
+/* Doc content: force start-aligned Persian text (right side in RTL) */
+html[dir='rtl'] article,
+html[dir='rtl'] .docItemContainer,
+html[dir='rtl'] .theme-doc-markdown,
+html[dir='rtl'] .markdown,
+html[dir='rtl'] .theme-doc-breadcrumbs,
+html[dir='rtl'] .breadcrumbsContainer,
+html[dir='rtl'] .breadcrumbs,
+html[dir='rtl'] .theme-admonition,
+html[dir='rtl'] .table-of-contents,
+html[dir='rtl'] .pagination-nav,
+html[dir='rtl'] .footer__links,
+html[dir='rtl'] .footer__col {
+  text-align: start;
+}
+
+html[dir='rtl'] .markdown h1,
+html[dir='rtl'] .markdown h2,
+html[dir='rtl'] .markdown h3,
+html[dir='rtl'] .markdown h4,
+html[dir='rtl'] .markdown p,
+html[dir='rtl'] .markdown li,
+html[dir='rtl'] .markdown table th,
+html[dir='rtl'] .markdown table td,
+html[dir='rtl'] .table-of-contents__link,
+html[dir='rtl'] .pagination-nav__link,
+html[dir='rtl'] .breadcrumbs__item,
+html[dir='rtl'] .breadcrumbs__link,
+html[dir='rtl'] .theme-admonition .admonition-content {
+  text-align: start;
+}
+
+/*rtl:begin:ignore*/
+html[dir='rtl'] .docItemHeader,
+html[dir='rtl'] .docItemTitle,
+html[dir='rtl'] .docItemDescription,
+html[dir='rtl'] .markdown header,
+html[dir='rtl'] .markdown header h1 {
+  text-align: right;
+  direction: rtl;
+}
+/*rtl:end:ignore*/
+
+html[dir='rtl'] .docItemDescription {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin: -0.35rem 0 1.25rem;
+}
+
+html[dir='rtl'] .markdown table {
+  display: table;
+  width: 100%;
+}
+
+html[dir='rtl'] .theme-admonition .admonition-heading {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+html[dir='rtl'] .theme-admonition .admonition-icon {
+  margin-inline-start: 0.4rem;
+  margin-inline-end: 0;
+}
+
+html[dir='rtl'] .pagination-nav__link--prev .pagination-nav__label::before,
+html[dir='rtl'] .pagination-nav__link--next .pagination-nav__label::after {
+  content: none;
+}
+
+html[dir='rtl'] .breadcrumbs {
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+html[dir='rtl'] .hash-link {
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0;
+}
+
+html[dir='rtl'] .theme-doc-markdown {
+  width: 100%;
+  max-width: 42rem;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+html[dir='rtl'] .theme-doc-sidebar-container {
+  border-inline-start: 1px solid var(--ifm-toc-border-color);
+  border-inline-end: none;
+}
+
+html[dir='rtl'] .theme-doc-toc-desktop {
+  border-inline-start: none;
+  border-inline-end: 1px solid var(--ifm-toc-border-color);
+}
+
+html[dir='rtl'] .hero,
+html[dir='rtl'] .sectionIntro,
+html[dir='rtl'] .quickLinksTitle {
+  text-align: center;
+}
+
+/* Mobile-first docs readability */
+.markdown {
+  font-size: 1rem;
+}
+
+.markdown h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.markdown h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.markdown h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.markdown p,
+.markdown li {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.markdown ol,
+.markdown ul {
+  padding-inline-start: 1.25rem;
+}
+
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.theme-doc-markdown {
+  max-width: 42rem;
+}
+
+/* Step cards for how-to lists */
+.markdown .steps-card {
+  background: var(--riality-card);
+  border: 1px solid var(--riality-border);
+  border-radius: 16px;
+  padding: 1rem 1.15rem;
+  margin: 1.25rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --ifm-font-size-base: 17px;
+    --ifm-spacing-horizontal: 1.5rem;
+  }
+
+  .markdown h1 {
+    font-size: 2rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.5rem;
+  }
+
+  .markdown .steps-card {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  .markdown h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Compact navbar on small screens */
+@media screen and (max-width: 996px) {
+  .navbar__title {
+    font-size: 1rem;
+  }
+
+  .navbar__logo img {
+    height: 28px;
+  }
+}
+
+/* Softer sidebar for RTL help */
+.theme-doc-sidebar-menu .menu__link {
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.theme-doc-sidebar-menu .menu__list-item-collapsible .menu__link {
+  font-weight: 600;
+}
+
+/* Footer comfort */
+.footer--dark {
+  background: #164640;
+}
+
+.footer__copyright {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
