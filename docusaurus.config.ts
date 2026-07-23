@@ -40,9 +40,38 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: 'docs',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          blogTitle: 'وبلاگ ریالیتی',
+          blogDescription:
+            'نکته‌ها، به‌روزرسانی‌ها و راهنماهای کوتاه برای مدیریت بهتر پول با ریالیتی',
+          blogSidebarTitle: 'آخرین مطالب',
+          blogSidebarCount: 'ALL',
+          postsPerPage: 10,
+          feedOptions: {
+            type: 'all',
+            title: 'وبلاگ ریالیتی',
+            description:
+              'نکته‌ها، به‌روزرسانی‌ها و راهنماهای کوتاه برای مدیریت بهتر پول با ریالیتی',
+            copyright: `© ${new Date().getFullYear()} ریالیتی`,
+            language: 'fa-IR',
+            createFeedItems: async (params) => {
+              const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+              return defaultCreateFeedItems({
+                blogPosts: blogPosts.filter((_, index) => index < 20),
+                ...rest,
+              });
+            },
+          },
+        },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
         },
       } satisfies Preset.Options,
     ],
@@ -50,6 +79,14 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+    metadata: [
+      {
+        name: 'keywords',
+        content:
+          'ریالیتی, مدیریت مالی, بودجه, خرج آزاد, مربی پولی, اپ مالی فارسی',
+      },
+      {name: 'twitter:card', content: 'summary_large_image'},
+    ],
     colorMode: {
       defaultMode: 'light',
       respectPrefersColorScheme: true,
@@ -66,6 +103,11 @@ const config: Config = {
           sidebarId: 'helpSidebar',
           position: 'right',
           label: 'راهنما',
+        },
+        {
+          to: '/blog',
+          label: 'وبلاگ',
+          position: 'right',
         },
       ],
     },
@@ -103,6 +145,19 @@ const config: Config = {
             {
               label: 'امنیت و پین',
               to: '/docs/security',
+            },
+          ],
+        },
+        {
+          title: 'وبلاگ',
+          items: [
+            {
+              label: 'همه مطالب',
+              to: '/blog',
+            },
+            {
+              label: 'RSS',
+              href: 'https://help.riality.app/blog/rss.xml',
             },
           ],
         },

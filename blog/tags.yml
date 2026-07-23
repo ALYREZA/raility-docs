@@ -1,0 +1,19 @@
+news:
+  label: اخبار
+  permalink: /news
+  description: اخبار و به‌روزرسانی‌های ریالیتی
+
+tips:
+  label: نکته‌ها
+  permalink: /tips
+  description: نکته‌های کوتاه برای مدیریت بهتر پول
+
+guides:
+  label: راهنما
+  permalink: /guides
+  description: راهنماهای کاربردی از وبلاگ ریالیتی
+
+product:
+  label: محصول
+  permalink: /product
+  description: معرفی قابلیت‌های اپ ریالیتی
