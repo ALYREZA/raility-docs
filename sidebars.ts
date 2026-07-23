@@ -9,10 +9,10 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'home',
-        'add-transaction',
-        'history',
-        'spending-plan',
         'ai-coach',
+        'history',
+        'add-transaction',
+        'spending-plan',
         'shared-budget',
         'import',
         'security',

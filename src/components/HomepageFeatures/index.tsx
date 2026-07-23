@@ -20,33 +20,33 @@ type QuickLink = {
 const FeatureList: FeatureItem[] = [
   {
     icon: '🏠',
-    title: 'خانه و وضعیت ماه',
+    title: 'خانه',
     description:
-      'ببینید ماهتان راحت است یا محتاط — بدون نمودار و عددهای گیج‌کننده.',
+      'وضعیت خرج آزاد و سبد خرید را با کلمات ساده ببینید — بدون نمودار شلوغ.',
     to: '/docs/home',
   },
   {
-    icon: '➕',
-    title: 'ثبت تراکنش',
+    icon: '✨',
+    title: 'مربی',
     description:
-      'درآمد یا هزینه را در چند ثانیه ثبت کنید؛ با دسته‌بندی فارسی و تقویم جلالی.',
-    to: '/docs/add-transaction',
+      'از نوار پایین تب مربی را باز کنید و با چند پرسش کوتاه راهنمایی بگیرید.',
+    to: '/docs/ai-coach',
   },
   {
-    icon: '🤖',
-    title: 'مربی و بودجه مشترک',
+    icon: '📋',
+    title: 'تراکنش‌ها',
     description:
-      'راهنمایی ساده بگیرید یا بودجه را با شریک زندگی‌تان هم‌زمان نگه دارید.',
-    to: '/docs/ai-coach',
+      'فهرست ماه، هفته یا روز را مرور کنید و ببینید پول کجا رفته است.',
+    to: '/docs/history',
   },
 ];
 
 const QuickLinks: QuickLink[] = [
   {label: 'شروع سریع', to: '/docs/intro'},
+  {label: 'ثبت تراکنش', to: '/docs/add-transaction'},
   {label: 'برنامه خرج', to: '/docs/spending-plan'},
-  {label: 'تراکنش‌ها', to: '/docs/history'},
+  {label: 'بودجه مشترک', to: '/docs/shared-budget'},
   {label: 'ورود خودکار', to: '/docs/import'},
-  {label: 'امنیت', to: '/docs/security'},
   {label: 'اشتراک', to: '/docs/subscription'},
 ];
 
@@ -114,8 +114,8 @@ export default function HomepageFeatures(): ReactNode {
             از کجا شروع کنیم؟
           </Heading>
           <p className={styles.sectionLead}>
-            سه قدم کافی است: یک تراکنش ثبت کنید، به خانه برگردید، بقیه را وقتی
-            لازم شد بخوانید.
+            سه تب پایین اپ را بشناسید: خانه، مربی، تراکنش‌ها. یک تراکنش ثبت
+            کنید و بقیه را وقتی لازم شد بخوانید.
           </p>
         </motion.div>
 
@@ -126,9 +126,9 @@ export default function HomepageFeatures(): ReactNode {
           whileInView="visible"
           viewport={{once: true, amount: 0.4}}
           transition={{duration: 0.55, delay: 0.05, ease: [0.22, 1, 0.36, 1]}}>
-          <li>اولین درآمد یا هزینه را ثبت کنید</li>
-          <li>تب خانه را باز کنید و وضعیت ماه را ببینید</li>
-          <li>برای هر بخش، راهنمای گام‌به‌گام را از فهرست انتخاب کنید</li>
+          <li>در تب خانه، افزودن تراکنش را بزنید</li>
+          <li>وضعیت ماه را در خانه ببینید؛ سؤال داشتید به مربی بروید</li>
+          <li>تاریخچه کامل را از تب تراکنش‌ها مرور کنید</li>
         </motion.ol>
 
         <div className="row">
