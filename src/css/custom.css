@@ -307,3 +307,89 @@ html[dir='rtl'] .quickLinksTitle {
   font-size: 0.9rem;
   opacity: 0.85;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Blog list / post readability (default Infima title is 3rem — too large)   */
+/* -------------------------------------------------------------------------- */
+
+.blog-wrapper article header h1,
+.blog-wrapper article header h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.55;
+  margin-bottom: 0.5rem;
+}
+
+.blog-wrapper.blog-post-page article header h1 {
+  font-size: 1.65rem;
+}
+
+.blog-wrapper article header time,
+.blog-wrapper article header {
+  text-align: start;
+}
+
+.blog-wrapper .markdown {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 42rem;
+}
+
+.blog-wrapper .markdown p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-wrapper article header h2 {
+    font-size: 1.45rem;
+  }
+
+  .blog-wrapper.blog-post-page article header h1 {
+    font-size: 1.85rem;
+  }
+}
+
+/*
+  Blog sidebar («آخرین مطالب»): keep it on the reading-start side in RTL
+  (right), with start-aligned Persian text — not flush to the physical left.
+  RTLCSS would flip physical direction/text-align, so ignore that block.
+*/
+/*rtl:begin:ignore*/
+html[dir='rtl'] .blog-wrapper .container > .row {
+  direction: rtl;
+}
+
+html[dir='rtl'] .blog-wrapper aside.col--3 {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir='rtl'] .blog-wrapper aside.col--3 nav,
+html[dir='rtl'] .blog-wrapper aside.col--3 h3,
+html[dir='rtl'] .blog-wrapper aside.col--3 a {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir='rtl'] .blog-wrapper main.col {
+  text-align: right;
+  direction: rtl;
+}
+/*rtl:end:ignore*/
+
+html[dir='rtl'] .blog-wrapper aside.col--3 {
+  margin-inline-start: 0;
+  padding-inline: 0.75rem 1.25rem;
+}
+
+html[dir='rtl'] .blog-wrapper aside.col--3 nav > div:first-child {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 1rem;
+}
+
+/* Prefer main column near the start edge; keep a calm reading measure */
+html[dir='rtl'] .blog-wrapper main.col--7 {
+  max-width: 42rem;
+}

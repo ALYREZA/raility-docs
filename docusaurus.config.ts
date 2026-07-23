@@ -156,8 +156,9 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: 'RSS',
-              href: 'https://help.riality.app/blog/rss.xml',
+              label: 'خوراک RSS',
+              // Static feed file (not a React route) — pathname:// avoids broken-link errors
+              href: 'pathname:///blog/rss.xml',
             },
           ],
         },
