@@ -393,3 +393,40 @@ html[dir='rtl'] .blog-wrapper aside.col--3 nav > div:first-child {
 html[dir='rtl'] .blog-wrapper main.col--7 {
   max-width: 42rem;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Blog author row: keep logo + name as small as possible                    */
+/* -------------------------------------------------------------------------- */
+
+.blog-wrapper article header .margin-top--md.margin-bottom--sm {
+  margin-top: 0.35rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.blog-wrapper article header .avatar {
+  margin-bottom: 0 !important;
+  align-items: center;
+}
+
+.blog-wrapper article header .avatar__photo {
+  --ifm-avatar-photo-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.blog-wrapper article header .avatar__intro {
+  margin-inline-start: 0.35rem;
+}
+
+.blog-wrapper article header .avatar__name,
+.blog-wrapper article header .avatar__name a,
+.blog-wrapper article header .avatar__name span {
+  font-size: 0.7rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* Title under the name is redundant with the brand — hide on post cards */
+.blog-wrapper article header .avatar__intro > small {
+  display: none;
+}
