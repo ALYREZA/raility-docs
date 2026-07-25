@@ -378,6 +378,31 @@ html[dir='rtl'] .quickLinksTitle {
   margin-bottom: 0;
 }
 
+/* Cover from front matter `image` (not rendered by classic theme by default) */
+.blog-wrapper .blogPostCover {
+  display: block;
+  margin-block: 0 1rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  line-height: 0;
+}
+
+.blog-wrapper .blogPostCoverImage {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--riality-surface);
+}
+
+.blog-wrapper.blog-list-page .blogPostCover {
+  margin-block-end: 0.85rem;
+}
+
+.blog-wrapper.blog-post-page .blogPostCover {
+  margin-block-end: 1.25rem;
+}
+
 .blog-wrapper article footer {
   margin-top: 1rem !important;
   font-size: 0.9rem;
