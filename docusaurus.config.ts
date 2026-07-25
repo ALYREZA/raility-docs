@@ -16,6 +16,13 @@ const config: Config = {
     experimental_vcs: vcsEnabled ? true : 'disabled',
   },
 
+  // Keep MDX1 space-title admonitions (`:::tip Title`) working under future.v4.
+  markdown: {
+    mdx1Compat: {
+      admonitions: true,
+    },
+  },
+
   url: 'https://riality.ir',
   baseUrl: '/',
 

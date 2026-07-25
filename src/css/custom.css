@@ -123,7 +123,7 @@ html[dir='rtl'] .table-of-contents__link,
 html[dir='rtl'] .pagination-nav__link,
 html[dir='rtl'] .breadcrumbs__item,
 html[dir='rtl'] .breadcrumbs__link,
-html[dir='rtl'] .theme-admonition .admonition-content {
+html[dir='rtl'] .theme-admonition [class*='admonitionContent'] {
   text-align: start;
 }
 
@@ -150,12 +150,12 @@ html[dir='rtl'] .markdown table {
   width: 100%;
 }
 
-html[dir='rtl'] .theme-admonition .admonition-heading {
+html[dir='rtl'] .theme-admonition [class*='admonitionHeading'] {
   justify-content: flex-start;
   text-align: start;
 }
 
-html[dir='rtl'] .theme-admonition .admonition-icon {
+html[dir='rtl'] .theme-admonition [class*='admonitionIcon'] {
   margin-inline-start: 0.4rem;
   margin-inline-end: 0;
 }
@@ -438,8 +438,33 @@ html[dir='rtl'] .blog-wrapper aside.col--3 nav > div:first-child {
 }
 
 /* Prefer main column near the start edge; keep a calm reading measure */
+html[dir='rtl'] .blog-wrapper main.col--6,
 html[dir='rtl'] .blog-wrapper main.col--7 {
   max-width: 40rem;
+}
+
+/* Blog post TOC (visually left in RTL): wider column + readable Persian links */
+html[dir='rtl'] .blog-wrapper .blogPostTocCol {
+  padding-inline: 1rem 0.5rem;
+}
+
+html[dir='rtl'] .blog-wrapper .blogPostTocCol .table-of-contents {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  padding-inline: 0.25rem 0.75rem;
+  border-inline-start: 1px solid var(--ifm-toc-border-color);
+  border-inline-end: none;
+}
+
+/* Infima’s physical left-border flips under RTLCSS — neutralize it */
+html[dir='rtl'] .blog-wrapper .blogPostTocCol .table-of-contents__left-border {
+  border-left: none;
+  border-right: none;
+}
+
+html[dir='rtl'] .blog-wrapper .blogPostTocCol .table-of-contents__link {
+  display: block;
+  padding-block: 0.15rem;
 }
 
 /* -------------------------------------------------------------------------- */
