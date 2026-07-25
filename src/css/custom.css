@@ -401,29 +401,23 @@ html[dir='rtl'] .quickLinksTitle {
   margin-bottom: 0;
 }
 
-/* Cover from front matter `image` (not rendered by classic theme by default) */
-.blog-wrapper .blogPostCover {
-  display: block;
-  margin-block: 0 1rem;
-  overflow: hidden;
-  border-radius: 0.75rem;
-  line-height: 0;
-}
-
-.blog-wrapper .blogPostCoverImage {
+/* First markdown image in a post acts as the cover */
+.blog-wrapper article .markdown > p:first-child img {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  margin: 0 0 1rem;
+  border-radius: 0.75rem;
   background: var(--riality-surface);
 }
 
-.blog-wrapper.blog-list-page .blogPostCover {
-  margin-block-end: 0.85rem;
+.blog-wrapper.blog-list-page article .markdown > p:first-child img {
+  margin-bottom: 0.85rem;
 }
 
-.blog-wrapper.blog-post-page .blogPostCover {
-  margin-block-end: 1.25rem;
+.blog-wrapper.blog-post-page article .markdown > p:first-child img {
+  margin-bottom: 1.25rem;
 }
 
 .blog-wrapper article footer {
