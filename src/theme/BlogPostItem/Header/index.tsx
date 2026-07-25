@@ -1,18 +1,8 @@
 import React, {type ReactNode} from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import {useBlogPost} from '@docusaurus/plugin-content-blog/client';
-import BlogPostItemContainer from '@theme/BlogPostItem/Container';
-import BlogPostItemHeader from '@theme/BlogPostItem/Header';
-import BlogPostItemContent from '@theme/BlogPostItem/Content';
-import BlogPostItemFooter from '@theme/BlogPostItem/Footer';
-import type {Props} from '@theme/BlogPostItem';
-
-function useContainerClassName(): string | undefined {
-  const {isBlogPostPage} = useBlogPost();
-  return !isBlogPostPage ? 'margin-bottom--xl' : undefined;
-}
+import BlogPostItemHeader from '@theme-original/BlogPostItem/Header';
 
 function useBlogPostCoverImage(): string | undefined {
   const {assets, metadata} = useBlogPost();
@@ -62,15 +52,11 @@ function BlogPostItemCover(): ReactNode {
   );
 }
 
-export default function BlogPostItem({children, className}: Props): ReactNode {
-  const containerClassName = useContainerClassName();
-
+export default function BlogPostItemHeaderWrapper(): ReactNode {
   return (
-    <BlogPostItemContainer className={clsx(containerClassName, className)}>
+    <>
       <BlogPostItemCover />
       <BlogPostItemHeader />
-      <BlogPostItemContent>{children}</BlogPostItemContent>
-      <BlogPostItemFooter />
-    </BlogPostItemContainer>
+    </>
   );
 }
