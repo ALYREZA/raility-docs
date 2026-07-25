@@ -46,7 +46,7 @@ docker compose pull
 docker compose up -d
 ```
 
-Caddy روی پورت‌های ۸۰/۴۴۳ گوش می‌دهد، TLS را برای `help.riality.app` می‌گیرد، و ترافیک را به سرویس `docs` پروکسی می‌کند.
+Caddy روی پورت‌های ۸۰/۴۴۳ گوش می‌دهد، TLS را برای `riality.ir` می‌گیرد، و ترافیک را به سرویس `docs` پروکسی می‌کند.
 
 برای تست محلی بدون دامنه، در `deploy/Caddyfile` موقتاً بنویسید:
 

@@ -1,4 +1,4 @@
-help.riality.app {
+riality.ir {
 	encode gzip
 	reverse_proxy docs:80
 }

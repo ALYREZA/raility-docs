@@ -11,7 +11,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://help.riality.app',
+  url: 'https://riality.ir',
   baseUrl: '/',
 
   organizationName: 'riality',
@@ -39,9 +39,12 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: 'docs',
+          // Needed so sitemap can emit <lastmod> (from Git / front matter)
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
+          showLastUpdateTime: true,
           blogTitle: 'وبلاگ ریالیتی',
           blogDescription:
             'نکته‌ها، به‌روزرسانی‌ها و راهنماهای کوتاه برای مدیریت بهتر پول با ریالیتی',
@@ -68,10 +71,18 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
         sitemap: {
-          changefreq: 'weekly',
-          priority: 0.5,
-          ignorePatterns: ['/tags/**'],
+          // Google uses lastmod; priority/changefreq are ignored
+          lastmod: 'date',
+          priority: null,
+          changefreq: null,
+          ignorePatterns: ['/tags/**', '/blog/tags/**'],
           filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            // Drop blog pagination (/blog/page/2, …) — keep canonical list pages
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
         },
       } satisfies Preset.Options,
     ],

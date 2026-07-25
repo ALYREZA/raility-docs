@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Full history so sitemap lastmod can read Git dates
+          fetch-depth: 0
 
       - name: Image name (lowercase for GHCR)
         id: image
