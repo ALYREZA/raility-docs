@@ -26,6 +26,13 @@ const FeatureList: FeatureItem[] = [
     to: '/docs/home',
   },
   {
+    icon: '🎯',
+    title: 'هدف‌ها',
+    description:
+      'ذخیره اضطراری یا هدف مشخص بسازید و پیشرفت را با وضعیت و درصد ببینید.',
+    to: '/docs/goals',
+  },
+  {
     icon: '✨',
     title: 'مربی',
     description:
@@ -44,6 +51,7 @@ const FeatureList: FeatureItem[] = [
 const QuickLinks: QuickLink[] = [
   {label: 'شروع سریع', to: '/docs/intro'},
   {label: 'ثبت تراکنش', to: '/docs/add-transaction'},
+  {label: 'هدف‌ها', to: '/docs/goals'},
   {label: 'برنامه خرج', to: '/docs/spending-plan'},
   {label: 'بودجه مشترک', to: '/docs/shared-budget'},
   {label: 'ورود خودکار', to: '/docs/import'},
@@ -60,7 +68,7 @@ function Feature({title, description, to, icon, index}: FeatureItem & {index: nu
 
   return (
     <motion.div
-      className={clsx('col col--4', styles.featureCol)}
+      className={clsx('col', 'col--6', styles.featureCol)}
       variants={reveal}
       initial={reduceMotion ? false : 'hidden'}
       whileInView="visible"
@@ -114,8 +122,8 @@ export default function HomepageFeatures(): ReactNode {
             از کجا شروع کنیم؟
           </Heading>
           <p className={styles.sectionLead}>
-            سه تب پایین اپ را بشناسید: خانه، مربی، تراکنش‌ها. یک تراکنش ثبت
-            کنید و بقیه را وقتی لازم شد بخوانید.
+            چهار تب پایین اپ را بشناسید: خانه، هدف‌ها، مربی، تراکنش‌ها. یک
+            تراکنش ثبت کنید و بقیه را وقتی لازم شد بخوانید.
           </p>
         </motion.div>
 
@@ -127,8 +135,8 @@ export default function HomepageFeatures(): ReactNode {
           viewport={{once: true, amount: 0.4}}
           transition={{duration: 0.55, delay: 0.05, ease: [0.22, 1, 0.36, 1]}}>
           <li>در تب خانه، افزودن تراکنش را بزنید</li>
-          <li>وضعیت ماه را در خانه ببینید؛ سؤال داشتید به مربی بروید</li>
-          <li>تاریخچه کامل را از تب تراکنش‌ها مرور کنید</li>
+          <li>وضعیت ماه را در خانه ببینید؛ برای پس‌انداز هدفمند به هدف‌ها بروید</li>
+          <li>سؤال داشتید به مربی بروید؛ تاریخچه را از تراکنش‌ها مرور کنید</li>
         </motion.ol>
 
         <div className="row">

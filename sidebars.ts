@@ -9,6 +9,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'home',
+        'goals',
         'ai-coach',
         'history',
         'add-transaction',
