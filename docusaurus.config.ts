@@ -60,8 +60,7 @@ const config: Config = {
           blogTitle: 'وبلاگ ریالیتی',
           blogDescription:
             'نکته‌ها، به‌روزرسانی‌ها و راهنماهای کوتاه برای مدیریت بهتر پول با ریالیتی',
-          blogSidebarTitle: 'آخرین مطالب',
-          blogSidebarCount: 'ALL',
+          blogSidebarCount: 0,
           postsPerPage: 10,
           feedOptions: {
             type: 'all',

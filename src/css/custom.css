@@ -165,6 +165,29 @@ html[dir='rtl'] .pagination-nav__link--next .pagination-nav__label::after {
   content: none;
 }
 
+/* Blog next/prev: post title is the main label */
+html[dir='rtl'] .blog-wrapper .blogPostPaginator {
+  margin-top: 2.5rem;
+}
+
+html[dir='rtl'] .blog-wrapper .blogPostPaginator .pagination-nav__link {
+  text-align: start;
+}
+
+html[dir='rtl'] .blog-wrapper .blogPostPaginator .pagination-nav__sublabel {
+  margin-bottom: 0.4rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-600);
+}
+
+html[dir='rtl'] .blog-wrapper .blogPostPaginator .pagination-nav__label {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--ifm-font-color-base);
+}
+
 html[dir='rtl'] .breadcrumbs {
   padding-inline-start: 0;
   padding-inline-end: 0;
