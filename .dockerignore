@@ -2,7 +2,7 @@ node_modules
 build
 .docusaurus
 .cache-loader
-# Keep .git so production sitemap can emit <lastmod> from file history
+.git
 .github
 .cursor
 .DS_Store

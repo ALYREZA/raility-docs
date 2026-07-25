@@ -7,6 +7,8 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN pnpm install --frozen-lockfile
 
 FROM deps AS build
+# No .git in the image — disable Git VCS so showLastUpdateTime / sitemap don't fail
+ENV DOCUSAURUS_VCS=0
 COPY . .
 RUN pnpm build
 

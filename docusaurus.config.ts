@@ -2,6 +2,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// Docker/CI builds copy sources without .git; eager Git VCS would throw.
+// Set DOCUSAURUS_VCS=0 in the image to disable Git-backed lastmod/lastUpdated.
+const vcsEnabled = process.env.DOCUSAURUS_VCS !== '0';
+
 const config: Config = {
   title: 'ریالیتی',
   tagline: 'مربی پولی شخصی — ساده ثبت کن، با خیال راحت خرج کن',
@@ -9,6 +13,7 @@ const config: Config = {
 
   future: {
     v4: true,
+    experimental_vcs: vcsEnabled ? true : 'disabled',
   },
 
   url: 'https://riality.ir',
