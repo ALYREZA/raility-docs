@@ -6,15 +6,140 @@ import type * as Preset from '@docusaurus/preset-classic';
 // Set DOCUSAURUS_VCS=0 in the image to disable Git-backed lastmod/lastUpdated.
 const vcsEnabled = process.env.DOCUSAURUS_VCS !== '0';
 
+const siteUrl = 'https://riality.ir';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'ریالیتی',
+      url: `${siteUrl}/`,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}/img/logo.png`,
+        width: 1024,
+        height: 1024,
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      url: `${siteUrl}/`,
+      name: 'ریالیتی',
+      description:
+        'مربی پولی شخصی — ساده ثبت کن، با خیال راحت خرج کن. راهنمای فارسی اپ ریالیتی.',
+      inLanguage: 'fa-IR',
+      publisher: {'@id': `${siteUrl}/#organization`},
+    },
+    {
+      '@type': 'ItemList',
+      '@id': `${siteUrl}/#sitenav`,
+      name: 'لینک‌های مهم ریالیتی',
+      itemListElement: [
+        {
+          '@type': 'SiteNavigationElement',
+          position: 1,
+          name: 'شروع سریع',
+          url: `${siteUrl}/docs/intro`,
+        },
+        {
+          '@type': 'SiteNavigationElement',
+          position: 2,
+          name: 'ثبت تراکنش',
+          url: `${siteUrl}/docs/add-transaction`,
+        },
+        {
+          '@type': 'SiteNavigationElement',
+          position: 3,
+          name: 'خانه اپ',
+          url: `${siteUrl}/docs/home`,
+        },
+        {
+          '@type': 'SiteNavigationElement',
+          position: 4,
+          name: 'وبلاگ',
+          url: `${siteUrl}/blog`,
+        },
+        {
+          '@type': 'SiteNavigationElement',
+          position: 5,
+          name: 'اشتراک',
+          url: `${siteUrl}/docs/subscription`,
+        },
+        {
+          '@type': 'SiteNavigationElement',
+          position: 6,
+          name: 'مربی هوشمند',
+          url: `${siteUrl}/docs/ai-coach`,
+        },
+      ],
+    },
+  ],
+};
+
 const config: Config = {
   title: 'ریالیتی',
   tagline: 'مربی پولی شخصی — ساده ثبت کن، با خیال راحت خرج کن',
-  favicon: 'img/favicon.png',
+  // Google Search prefers a square PNG that is a multiple of 48px.
+  favicon: 'img/favicon-96x96.png',
 
   future: {
     v4: true,
     experimental_vcs: vcsEnabled ? true : 'disabled',
   },
+
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/favicon.ico',
+        sizes: '48x48',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/img/favicon-96x96.png',
+        sizes: '96x96',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/img/favicon-192x192.png',
+        sizes: '192x192',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        href: '/img/apple-touch-icon.png',
+        sizes: '180x180',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: '/site.webmanifest',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify(structuredData),
+    },
+  ],
 
   // Keep MDX1 space-title admonitions (`:::tip Title`) working under future.v4.
   markdown: {
@@ -23,7 +148,7 @@ const config: Config = {
     },
   },
 
-  url: 'https://riality.ir',
+  url: siteUrl,
   baseUrl: '/',
 
   organizationName: 'riality',
