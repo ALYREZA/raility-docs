@@ -10,6 +10,10 @@ import {
   type ChangelogEntry,
 } from '@site/src/data/changelogEntries';
 import {formatJalaliDate} from '@site/src/utils/formatJalaliDate';
+import {
+  compareJalaliCalVer,
+  formatAppVersionLabel,
+} from '@site/src/utils/jalaliCalVer';
 import styles from './roadmap.module.css';
 
 type ChangelogItemProps = {
@@ -22,12 +26,20 @@ function ChangelogItem({entry, index, isLast}: ChangelogItemProps) {
   const reduceMotion = useReducedMotion();
   const jalaliDate = formatJalaliDate(entry.date);
   const tagLabel = CHANGELOG_TAG_LABELS[entry.tag];
+  const versionLabel = entry.version
+    ? formatAppVersionLabel(entry.version)
+    : null;
 
   return (
     <li className={clsx(styles.item, isLast && styles.itemLast)}>
       <div className={styles.dateCol}>
         <div className={styles.stickyBlock}>
           <div className={styles.dateMeta}>
+            {versionLabel ? (
+              <span className={styles.version} dir="ltr">
+                {versionLabel}
+              </span>
+            ) : null}
             <time className={styles.date} dateTime={entry.date}>
               {jalaliDate}
             </time>
@@ -49,9 +61,21 @@ function ChangelogItem({entry, index, isLast}: ChangelogItemProps) {
           delay: Math.min(index * 0.04, 0.12),
           ease: [0.22, 1, 0.36, 1],
         }}>
-        <time className={styles.mobileDate} dateTime={entry.date}>
-          {jalaliDate}
-        </time>
+        <p className={styles.mobileMeta}>
+          {versionLabel ? (
+            <>
+              <span className={styles.mobileVersion} dir="ltr">
+                {versionLabel}
+              </span>
+              <span className={styles.metaSep} aria-hidden="true">
+                ·
+              </span>
+            </>
+          ) : null}
+          <time className={styles.mobileDate} dateTime={entry.date}>
+            {jalaliDate}
+          </time>
+        </p>
         <span
           className={clsx(
             styles.tag,
@@ -87,11 +111,25 @@ function ChangelogItem({entry, index, isLast}: ChangelogItemProps) {
   );
 }
 
+function sortChangelogEntries(
+  a: ChangelogEntry,
+  b: ChangelogEntry,
+): number {
+  if (a.version && b.version) {
+    return compareJalaliCalVer(b.version, a.version);
+  }
+  if (a.version && !b.version) {
+    return -1;
+  }
+  if (!a.version && b.version) {
+    return 1;
+  }
+  return b.date.localeCompare(a.date);
+}
+
 export default function RoadmapPage(): ReactNode {
   const reduceMotion = useReducedMotion();
-  const entries = [...changelogEntries].sort(function sortByDateDesc(a, b) {
-    return b.date.localeCompare(a.date);
-  });
+  const entries = [...changelogEntries].sort(sortChangelogEntries);
 
   return (
     <Layout
@@ -108,7 +146,12 @@ export default function RoadmapPage(): ReactNode {
               به‌روزرسانی‌ها
             </Heading>
             <p className={styles.lead}>
-              تغییرات و قابلیت‌های جدید اپ ریالیتی را اینجا دنبال کنید.
+              قابلیت‌های واقعی اپ ریالیتی — با همان شمارهٔ Jalali CalVer داخل اپ
+              (مثل{' '}
+              <span className={styles.leadVersion} dir="ltr">
+                v05.05.0201
+              </span>
+              ).
             </p>
           </motion.header>
 
