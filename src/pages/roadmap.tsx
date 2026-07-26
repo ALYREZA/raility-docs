@@ -27,9 +27,14 @@ function ChangelogItem({entry, index, isLast}: ChangelogItemProps) {
     <li className={clsx(styles.item, isLast && styles.itemLast)}>
       <div className={styles.dateCol}>
         <div className={styles.stickyBlock}>
-          <time className={styles.date} dateTime={entry.date}>
-            {jalaliDate}
-          </time>
+          <div className={styles.dateMeta}>
+            <time className={styles.date} dateTime={entry.date}>
+              {jalaliDate}
+            </time>
+            <span className={clsx(styles.tag, styles[`tag_${entry.tag}`])}>
+              {tagLabel}
+            </span>
+          </div>
           <span className={styles.dot} aria-hidden="true" />
         </div>
       </div>
@@ -47,11 +52,16 @@ function ChangelogItem({entry, index, isLast}: ChangelogItemProps) {
         <time className={styles.mobileDate} dateTime={entry.date}>
           {jalaliDate}
         </time>
+        <span
+          className={clsx(
+            styles.tag,
+            styles.mobileTag,
+            styles[`tag_${entry.tag}`],
+          )}>
+          {tagLabel}
+        </span>
 
         <div className={styles.entryHeader}>
-          <span className={clsx(styles.tag, styles[`tag_${entry.tag}`])}>
-            {tagLabel}
-          </span>
           <Heading as="h2" className={styles.entryTitle}>
             {entry.title}
           </Heading>
