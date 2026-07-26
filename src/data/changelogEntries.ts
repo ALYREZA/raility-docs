@@ -8,7 +8,7 @@ export type ChangelogEntry = {
   id: string;
   /**
    * Jalali CalVer `YY.MM.DDHH` (Asia/Tehran) — same as app `package.json` /
-   * in-app changelog `version`. Omit for planned items not yet released.
+   * in-app changelog `version`. Omit until the feature ships in a store build.
    */
   version?: string;
   /** ISO date YYYY-MM-DD — shown as Jalali */
@@ -30,9 +30,22 @@ export const CHANGELOG_TAG_LABELS: Record<ChangelogTag, string> = {
 
 /**
  * به‌روزرسانی‌های اپ ریالیتی — فقط قابلیت‌های واقعی اپ.
- * نسخه با Jalali CalVer اپ (`package.json`) هم‌تراز است.
+ * جدیدترین بالا (تاریخ، سپس CalVer).
  */
 export const changelogEntries: ChangelogEntry[] = [
+  {
+    id: 'goals',
+    date: '2026-07-26',
+    tag: 'feature',
+    title: 'هدف‌ها',
+    paragraphs: [
+      'تب هدف‌ها اضافه شد: ذخیره اضطراری یا یک هدف مشخص با مبلغ و افق زمانی تعریف کنید.',
+      'خط زمان ماه‌به‌ماه پیشرفت را نشان می‌دهد؛ واریز و برداشت از هدف جدا از خرج روزمره ثبت می‌شود.',
+      'هدف اصلی در بالای لیست برجسته می‌شود — همه‌چیز روی دستگاه شما و با تقویم جلالی.',
+    ],
+    image: '/img/changelog/goals.jpg',
+    imageAlt: 'هدف پس‌انداز در اپ ریالیتی',
+  },
   {
     id: 'shared-budget',
     version: '05.05.0201',
@@ -50,7 +63,7 @@ export const changelogEntries: ChangelogEntry[] = [
   {
     id: 'ai-coach',
     version: '05.04.2900',
-    date: '2026-07-20',
+    date: '2026-07-21',
     tag: 'beta',
     title: 'مربی (آزمایشی)',
     paragraphs: [
@@ -64,7 +77,7 @@ export const changelogEntries: ChangelogEntry[] = [
   {
     id: 'sms-import',
     version: '05.04.2412',
-    date: '2026-07-15',
+    date: '2026-07-23',
     tag: 'feature',
     title: 'ورود از پیامک بانکی',
     paragraphs: [
@@ -78,7 +91,7 @@ export const changelogEntries: ChangelogEntry[] = [
   {
     id: 'spending-plan',
     version: '05.04.1910',
-    date: '2026-07-10',
+    date: '2026-07-21',
     tag: 'feature',
     title: 'روز حقوق و برنامهٔ خرج',
     paragraphs: [
@@ -88,19 +101,5 @@ export const changelogEntries: ChangelogEntry[] = [
     ],
     image: '/img/changelog/spending-plan.jpg',
     imageAlt: 'برنامهٔ خرج و روز حقوق در ریالیتی',
-  },
-  {
-    id: 'goals',
-    version: '05.04.1209',
-    date: '2026-07-03',
-    tag: 'feature',
-    title: 'هدف‌ها',
-    paragraphs: [
-      'برای پس‌انداز یا خرید مشخص، هدف بسازید و پیشرفت ماه‌به‌ماه را ببینید.',
-      'واریز و برداشت از هدف ثبت می‌شود تا موجودی هدف از خرج روزمره جدا بماند.',
-      'هدف‌ها روی دستگاه شما می‌مانند و با تقویم جلالی ماه مالی هم‌خوان هستند.',
-    ],
-    image: '/img/changelog/goals.jpg',
-    imageAlt: 'هدف پس‌انداز در اپ ریالیتی',
   },
 ];

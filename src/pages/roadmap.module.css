@@ -31,8 +31,16 @@
 .lead {
   margin: 0;
   color: var(--ifm-color-emphasis-700);
-  line-height: 1.9;
+  line-height: 1.6;
   font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .lead {
+    white-space: normal;
+    font-size: 0.98rem;
+  }
 }
 
 .leadVersion {

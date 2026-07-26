@@ -111,10 +111,16 @@ function ChangelogItem({entry, index, isLast}: ChangelogItemProps) {
   );
 }
 
-function sortChangelogEntries(
+/** Newest first: date desc, then Jalali CalVer desc. */
+function sortChangelogEntriesNewestFirst(
   a: ChangelogEntry,
   b: ChangelogEntry,
 ): number {
+  const byDate = b.date.localeCompare(a.date);
+  if (byDate !== 0) {
+    return byDate;
+  }
+
   if (a.version && b.version) {
     return compareJalaliCalVer(b.version, a.version);
   }
@@ -124,12 +130,29 @@ function sortChangelogEntries(
   if (!a.version && b.version) {
     return 1;
   }
-  return b.date.localeCompare(a.date);
+  return 0;
 }
 
 export default function RoadmapPage(): ReactNode {
   const reduceMotion = useReducedMotion();
-  const entries = [...changelogEntries].sort(sortChangelogEntries);
+  const entries = [...changelogEntries].sort(sortChangelogEntriesNewestFirst);
+  const latestVersion = entries.reduce<string | undefined>(
+    function findHighestCalVer(best, entry) {
+      if (!entry.version) {
+        return best;
+      }
+      if (!best) {
+        return entry.version;
+      }
+      return compareJalaliCalVer(entry.version, best) > 0
+        ? entry.version
+        : best;
+    },
+    undefined,
+  );
+  const latestVersionLabel = latestVersion
+    ? formatAppVersionLabel(latestVersion)
+    : null;
 
   return (
     <Layout
@@ -146,12 +169,14 @@ export default function RoadmapPage(): ReactNode {
               به‌روزرسانی‌ها
             </Heading>
             <p className={styles.lead}>
-              قابلیت‌های واقعی اپ ریالیتی — با همان شمارهٔ Jalali CalVer داخل اپ
-              (مثل{' '}
-              <span className={styles.leadVersion} dir="ltr">
-                v05.05.0201
-              </span>
-              ).
+              شمارهٔ نسخه‌ها همان شمارهٔ جلالی داخل اپ است — آخرین:{' '}
+              {latestVersionLabel ? (
+                <span className={styles.leadVersion} dir="ltr">
+                  {latestVersionLabel}
+                </span>
+              ) : (
+                '—'
+              )}
             </p>
           </motion.header>
 
