@@ -252,6 +252,11 @@ const config: Config = {
           label: 'راهنما',
         },
         {
+          to: '/roadmap',
+          label: 'به‌روزرسانی‌ها',
+          position: 'right',
+        },
+        {
           to: '/blog',
           label: 'وبلاگ',
           position: 'right',
@@ -292,6 +297,10 @@ const config: Config = {
             {
               label: 'امنیت و پین',
               to: '/docs/security',
+            },
+            {
+              label: 'به‌روزرسانی‌ها',
+              to: '/roadmap',
             },
           ],
         },
