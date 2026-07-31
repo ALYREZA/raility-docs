@@ -1,0 +1,64 @@
+# ریالیتی
+> مربی پولی شخصی — راهنمای فارسی اپلیکیشن مدیریت مالی (آفلاین‌اول).
+
+سایت: https://riality.ir
+زبان: fa-IR (RTL)
+
+این فایل فهرست منابع قابل‌خواندن برای LLM و ابزارهای MCP است.
+برای متن کامل راهنماها: /llms-full.txt
+برای فهرست ساخت‌یافته: /catalog/docs.json ، /catalog/blog.json ، /catalog/changelog.json
+
+## Docs
+
+- [شروع سریع](https://riality.ir/docs/intro): معرفی کوتاه ریالیتی و اولین قدم‌ها
+- [صفحه خانه](https://riality.ir/docs/home): آشنایی با تب خانه، وضعیت ماه و خرج آزاد
+- [هدف‌ها](https://riality.ir/docs/goals): پس‌انداز برای ذخیره اضطراری و هدف‌های مشخص
+- [مربی هوشمند](https://riality.ir/docs/ai-coach): راهنمایی محلی و عمیق‌تر آنلاین از تب مربی
+- [تراکنش‌ها](https://riality.ir/docs/history): مشاهده تاریخچه درآمد و هزینه از تب تراکنش‌ها
+- [ثبت تراکنش](https://riality.ir/docs/add-transaction): چگونه درآمد یا هزینه را در ریالیتی ثبت کنیم
+- [برنامه خرج](https://riality.ir/docs/spending-plan): روز حقوق، خرج آزاد و سبد خرید
+- [بودجه مشترک](https://riality.ir/docs/shared-budget): اشتراک بودجه با شریک زندگی یا هم‌خانه
+- [ورود خودکار](https://riality.ir/docs/import): پیشنهاد تراکنش از پیامک یا ایمیل بانکی
+- [امنیت و پین](https://riality.ir/docs/security): قفل پشتیبان با پین و نکات حریم خصوصی
+- [مدیریت داده](https://riality.ir/docs/data-management): پشتیبان‌گیری، خروجی و بازیابی داده‌ها
+- [اشتراک](https://riality.ir/docs/subscription): دوره رایگان، paywall و امکانات اشتراک
+
+## Blog
+
+- [فهرست وبلاگ](https://riality.ir/blog)
+- [JSON Feed](https://riality.ir/blog/feed.json)
+- [RSS](https://riality.ir/blog/rss.xml)
+- [Atom](https://riality.ir/blog/atom.xml)
+- [کاتالوگ JSON](https://riality.ir/catalog/blog.json)
+
+- [سرمایه‌گذاری بلندمدت برای ساخت ثروت؛ راهنمای شروع مرحله‌به‌مرحله](https://riality.ir/blog/long-term-investing-wealth-building): چگونه پس از بودجه‌بندی، کنترل بدهی و ساخت صندوق اضطراری، یک برنامه منظم، متنوع و قابل‌ادامه برای سرمایه‌گذاری بلندمدت بسازیم؟
+- [مدیریت هزینه‌های سالانه و نامنظم؛ چگونه برای مخارج آینده از قبل پول کنار بگذاریم؟](https://riality.ir/blog/managing-irregular-annual-expenses): راهنمای عملی شناسایی هزینه‌های سالانه و نامنظم، محاسبه سهم ماهانه، ساخت پس‌اندازهای دوره‌ای و جلوگیری از برداشت غیرضروری از صندوق اضطراری.
+- [بودجه مشترک زوجین؛ روش تقسیم هزینه‌های زندگی و مدیریت پول دونفره](https://riality.ir/blog/shared-budget-for-couples): راهنمای عملی مدیریت مالی زوجین، تقسیم عادلانه مخارج خانه، جداسازی هزینه‌های مشترک و شخصی و ساخت بودجه دونفره.
+- [کنترل هزینه‌های روزانه برای افراد با درآمد ثابت](https://riality.ir/blog/daily-expense-management-for-fixed-income): روشی ساده و عملی برای ثبت، بررسی و کنترل هزینه‌های روزانه، مناسب افرادی که حقوق یا درآمد ثابت ماهانه دارند.
+- [صندوق اضطراری چیست و چطور آن را از صفر بسازیم؟](https://riality.ir/blog/emergency-fund-guide): راهنمای ساده ساخت صندوق اضطراری برای افراد تازه‌کار؛ از محاسبه هزینه‌های ضروری و تعیین هدف تا پس‌انداز ماهانه، محل نگهداری پول و قوانین برداشت.
+- [چرا حقوق قبل از پایان ماه تمام می‌شود؟ راهنمای بودجه‌بندی ماهانه](https://riality.ir/blog/monthly-budgeting-for-fixed-income): یک روش عملی برای بودجه‌بندی حقوق ماهانه، کنترل هزینه‌ها و جلوگیری از تمام شدن پول پیش از دریافت حقوق بعدی.
+- [اول بدهی را پرداخت کنیم یا پس‌انداز کنیم؟](https://riality.ir/blog/pay-off-debt-or-save-first): راهنمای ساده تصمیم‌گیری میان بازپرداخت بدهی و پس‌انداز؛ از ساخت ذخیره اضطراری و اولویت‌بندی بدهی‌ها تا انتخاب روش گلوله‌برفی یا بهمن بدهی.
+- [برنامه مالی روز دریافت حقوق](https://riality.ir/blog/payday-financial-routine): یک برنامه مرحله‌به‌مرحله برای روز دریافت حقوق؛ از ثبت درآمد و پرداخت تعهدات تا پس‌انداز، صندوق اضطراری، بدهی و تعیین خرج آزاد ماه.
+- [چطور برای یک هدف مالی پس‌انداز کنیم؟ راهنمای ساده برای شروع](https://riality.ir/blog/saving-for-financial-goal): راهنمای مرحله‌به‌مرحله پس‌انداز برای یک هدف مالی؛ از تعیین مبلغ و زمان تا محاسبه پس‌انداز ماهانه، کنترل هزینه‌ها و پیگیری پیشرفت.
+- [به وبلاگ ریالیتی خوش آمدید](https://riality.ir/blog/welcome): اولین مطلب وبلاگ ریالیتی — نکته‌ها، به‌روزرسانی‌ها و راهنماهای کوتاه برای مدیریت بهتر پول
+
+## Changelog / Roadmap
+
+- [صفحه به‌روزرسانی‌ها](https://riality.ir/roadmap)
+- [کاتالوگ JSON](https://riality.ir/catalog/changelog.json)
+
+- [هدف‌ها](https://riality.ir/roadmap#goals) — قابلیت: تب هدف‌ها اضافه شد: ذخیره اضطراری یا یک هدف مشخص با مبلغ و افق زمانی تعریف کنید.
+- [بودجه مشترک](https://riality.ir/roadmap#shared-budget) — قابلیت (05.05.0201): با دعوت QR یا کد، شریک را به بودجه مشترک اضافه کنید؛ نقش مالک و عضو مشخص است.
+- [مربی (آزمایشی)](https://riality.ir/roadmap#ai-coach) — آزمایشی (05.04.2900): در تب مربی، پیشنهادهای کوتاه و مرحله‌به‌مرحله می‌گیرید — نه دیوار متن طولانی.
+- [ورود از پیامک بانکی](https://riality.ir/roadmap#sms-import) — قابلیت (05.04.2412): روی اندروید، پیامک‌های بانکی خوانده می‌شوند و به‌صورت نامزد واردات آمادهٔ تأیید می‌آیند.
+- [روز حقوق و برنامهٔ خرج](https://riality.ir/roadmap#spending-plan) — قابلیت (05.04.1910): ماه مالی از روز حقوق شما شروع می‌شود — نه از اول تقویم.
+
+## Machine indexes
+
+- [llms.txt](https://riality.ir/llms.txt)
+- [llms-full.txt](https://riality.ir/llms-full.txt) — متن کامل docs
+- [docs catalog](https://riality.ir/catalog/docs.json)
+- [blog catalog](https://riality.ir/catalog/blog.json)
+- [changelog catalog](https://riality.ir/catalog/changelog.json)
+- [sitemap](https://riality.ir/sitemap.xml)
+

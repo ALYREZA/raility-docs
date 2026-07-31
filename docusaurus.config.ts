@@ -133,6 +133,24 @@ const config: Config = {
       },
     },
     {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        type: 'text/plain',
+        href: '/llms.txt',
+        title: 'llms.txt',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        type: 'application/json',
+        href: '/catalog/docs.json',
+        title: 'Docs catalog',
+      },
+    },
+    {
       tagName: 'script',
       attributes: {
         type: 'application/ld+json',
@@ -315,6 +333,10 @@ const config: Config = {
               label: 'خوراک RSS',
               // Static feed file (not a React route) — pathname:// avoids broken-link errors
               href: 'pathname:///blog/rss.xml',
+            },
+            {
+              label: 'llms.txt',
+              href: 'pathname:///llms.txt',
             },
           ],
         },

@@ -2,3 +2,10 @@ User-agent: *
 Allow: /
 
 Sitemap: https://riality.ir/sitemap.xml
+
+# LLM / agent indexes
+# https://riality.ir/llms.txt
+# https://riality.ir/llms-full.txt
+# https://riality.ir/catalog/docs.json
+# https://riality.ir/catalog/blog.json
+# https://riality.ir/catalog/changelog.json

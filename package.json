@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "generate:catalog": "node scripts/generate-llm-catalog.mjs",
+    "prestart": "pnpm generate:catalog",
     "start": "docusaurus start",
+    "prebuild": "pnpm generate:catalog",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",

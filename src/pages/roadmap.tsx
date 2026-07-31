@@ -31,7 +31,9 @@ function ChangelogItem({entry, index, isLast}: ChangelogItemProps) {
     : null;
 
   return (
-    <li className={clsx(styles.item, isLast && styles.itemLast)}>
+    <li
+      id={entry.id}
+      className={clsx(styles.item, isLast && styles.itemLast)}>
       <div className={styles.dateCol}>
         <div className={styles.stickyBlock}>
           <div className={styles.dateMeta}>

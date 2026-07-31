@@ -1,0 +1,103 @@
+{
+  "site": "https://riality.ir",
+  "generatedAt": "2026-07-31T21:18:41.998Z",
+  "count": 12,
+  "docs": [
+    {
+      "id": "intro",
+      "title": "شروع سریع",
+      "description": "معرفی کوتاه ریالیتی و اولین قدم‌ها",
+      "url": "https://riality.ir/docs/intro",
+      "path": "/docs/intro",
+      "order": 1
+    },
+    {
+      "id": "home",
+      "title": "صفحه خانه",
+      "description": "آشنایی با تب خانه، وضعیت ماه و خرج آزاد",
+      "url": "https://riality.ir/docs/home",
+      "path": "/docs/home",
+      "order": 2
+    },
+    {
+      "id": "goals",
+      "title": "هدف‌ها",
+      "description": "پس‌انداز برای ذخیره اضطراری و هدف‌های مشخص",
+      "url": "https://riality.ir/docs/goals",
+      "path": "/docs/goals",
+      "order": 3
+    },
+    {
+      "id": "ai-coach",
+      "title": "مربی هوشمند",
+      "description": "راهنمایی محلی و عمیق‌تر آنلاین از تب مربی",
+      "url": "https://riality.ir/docs/ai-coach",
+      "path": "/docs/ai-coach",
+      "order": 4
+    },
+    {
+      "id": "history",
+      "title": "تراکنش‌ها",
+      "description": "مشاهده تاریخچه درآمد و هزینه از تب تراکنش‌ها",
+      "url": "https://riality.ir/docs/history",
+      "path": "/docs/history",
+      "order": 5
+    },
+    {
+      "id": "add-transaction",
+      "title": "ثبت تراکنش",
+      "description": "چگونه درآمد یا هزینه را در ریالیتی ثبت کنیم",
+      "url": "https://riality.ir/docs/add-transaction",
+      "path": "/docs/add-transaction",
+      "order": 6
+    },
+    {
+      "id": "spending-plan",
+      "title": "برنامه خرج",
+      "description": "روز حقوق، خرج آزاد و سبد خرید",
+      "url": "https://riality.ir/docs/spending-plan",
+      "path": "/docs/spending-plan",
+      "order": 7
+    },
+    {
+      "id": "shared-budget",
+      "title": "بودجه مشترک",
+      "description": "اشتراک بودجه با شریک زندگی یا هم‌خانه",
+      "url": "https://riality.ir/docs/shared-budget",
+      "path": "/docs/shared-budget",
+      "order": 8
+    },
+    {
+      "id": "import",
+      "title": "ورود خودکار",
+      "description": "پیشنهاد تراکنش از پیامک یا ایمیل بانکی",
+      "url": "https://riality.ir/docs/import",
+      "path": "/docs/import",
+      "order": 9
+    },
+    {
+      "id": "security",
+      "title": "امنیت و پین",
+      "description": "قفل پشتیبان با پین و نکات حریم خصوصی",
+      "url": "https://riality.ir/docs/security",
+      "path": "/docs/security",
+      "order": 10
+    },
+    {
+      "id": "data-management",
+      "title": "مدیریت داده",
+      "description": "پشتیبان‌گیری، خروجی و بازیابی داده‌ها",
+      "url": "https://riality.ir/docs/data-management",
+      "path": "/docs/data-management",
+      "order": 11
+    },
+    {
+      "id": "subscription",
+      "title": "اشتراک",
+      "description": "دوره رایگان، paywall و امکانات اشتراک",
+      "url": "https://riality.ir/docs/subscription",
+      "path": "/docs/subscription",
+      "order": 12
+    }
+  ]
+}
