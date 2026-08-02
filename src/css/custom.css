@@ -586,3 +586,32 @@ html[dir='rtl'] .blog-wrapper .blogPostTocCol .table-of-contents__link {
   display: none;
 }
 
+/*
+  Local search (RTL): result text is Persian; input stays LTR per the plugin.
+  Physical left/right are ignored here — RTLCSS would flip them incorrectly.
+*/
+/*rtl:begin:ignore*/
+html[dir='rtl'] .navbar__search[class*='searchBarContainer'] {
+  margin-inline-start: 16px;
+  margin-inline-end: 0;
+}
+
+html[dir='rtl'] .navbar__search [class*='dropdownMenu'] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir='rtl'] .navbar__search [class*='hitWrapper'],
+html[dir='rtl'] .navbar__search [class*='hitTitle'],
+html[dir='rtl'] .navbar__search [class*='hitPath'],
+html[dir='rtl'] .navbar__search [class*='hitFooter'] {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir='rtl'] .navbar__search [class*='noResults'] {
+  direction: rtl;
+  text-align: center;
+}
+/*rtl:end:ignore*/
+

@@ -195,15 +195,11 @@ const config: Config = {
         indexDocs: true,
         indexBlog: true,
         indexPages: false,
-        // lunr has no Persian stemmer; Arabic is the closest RTL option.
-        language: ['ar'],
-        removeDefaultStopWordFilter: ['ar', 'en'],
+        // Persian is not supported by lunr-languages; index raw tokens instead.
+        removeDefaultStopWordFilter: true,
         removeDefaultStemmer: true,
         highlightSearchTermsOnTargetPage: true,
-        searchContextByPaths: [
-          {label: 'راهنما', path: 'docs'},
-          {label: 'وبلاگ', path: 'blog'},
-        ],
+        searchBarPosition: 'left',
         searchBarShortcut: true,
         searchBarShortcutKeymap: 'mod+k',
       },
