@@ -587,8 +587,8 @@ html[dir='rtl'] .blog-wrapper .blogPostTocCol .table-of-contents__link {
 }
 
 /*
-  Local search (RTL): result text is Persian; input stays LTR per the plugin.
-  Physical left/right are ignored here — RTLCSS would flip them incorrectly.
+  Local search (RTL): Persian input + dropdown positioning.
+  Wrapped in rtl:ignore so Docusaurus RTLCSS does not flip physical values.
 */
 /*rtl:begin:ignore*/
 html[dir='rtl'] .navbar__search[class*='searchBarContainer'] {
@@ -596,9 +596,47 @@ html[dir='rtl'] .navbar__search[class*='searchBarContainer'] {
   margin-inline-end: 0;
 }
 
+/* Persian types RTL — icon on the right, shortcut/clear on the left */
+html[dir='rtl'] .navbar__search .navbar__search-input {
+  direction: rtl;
+  text-align: start;
+  padding-left: 3.25rem !important;
+  padding-right: 2.75rem !important;
+}
+
+html[dir='rtl'] .navbar__search [class*='searchIcon'] {
+  left: auto !important;
+  right: 0.75rem !important;
+}
+
+html[dir='rtl'] .navbar__search [class*='searchHintContainer'] {
+  left: 0.5rem !important;
+  right: auto !important;
+}
+
+html[dir='rtl'] .navbar__search [class*='searchClearButton'] {
+  left: 0.5rem !important;
+  right: auto !important;
+}
+
+html[dir='rtl'] .navbar__search [class*='searchBarLoadingRing'] {
+  left: 0.5rem !important;
+  right: auto !important;
+}
+
+/* Grow rightward from the search bar (search sits on the left in RTL navbar) */
 html[dir='rtl'] .navbar__search [class*='dropdownMenu'] {
   direction: rtl;
   text-align: right;
+  left: 0 !important;
+  right: auto !important;
+  width: min(560px, calc(100vw - 1.5rem));
+  max-width: calc(100vw - 1.5rem);
+}
+
+html[dir='rtl'] .navbar__inner,
+html[dir='rtl'] .navbar {
+  overflow: visible;
 }
 
 html[dir='rtl'] .navbar__search [class*='hitWrapper'],
@@ -612,6 +650,154 @@ html[dir='rtl'] .navbar__search [class*='hitFooter'] {
 html[dir='rtl'] .navbar__search [class*='noResults'] {
   direction: rtl;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  html[dir='rtl'] .navbar__search [class*='dropdownMenu'] {
+    width: min(340px, calc(100vw - 1rem));
+    max-width: calc(100vw - 1rem);
+  }
+}
+/*rtl:end:ignore*/
+
+/*
+  Search results page (/search) — riality docs/blog look.
+  Scoped via plugin class on <html> (no swizzle needed).
+*/
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper {
+  background: var(--riality-surface);
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper > .container {
+  max-width: 42rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  padding-block: 2rem 3rem;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: start;
+  margin-bottom: 1.25rem;
+  color: var(--ifm-heading-color);
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper > .container > p {
+  text-align: start;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 1rem;
+}
+
+/*rtl:begin:ignore*/
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] input[type='search'][name='q'] {
+  direction: rtl;
+  text-align: start;
+  width: 100%;
+  padding: 0.85rem 2.75rem 0.85rem 1rem;
+  font-size: 1rem;
+  font-family: var(--ifm-font-family-base);
+  border: 1px solid var(--riality-border);
+  border-radius: 12px;
+  background: var(--riality-card)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23247f73'%3E%3Cpath d='M6.03 10.2a4.17 4.17 0 1 1 4.17-4.17 4.16 4.16 0 0 1-4.17 4.17Zm9.69 4.22-4.82-4.82A5.88 5.88 0 0 0 12.06 6.03 6 6 0 1 0 9.6 10.9l4.82 4.82a.9.9 0 0 0 1.3 0 .9.9 0 0 0 0-1.3Z'/%3E%3C/svg%3E")
+    no-repeat right 0.85rem center / 1rem 1rem;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 1.25rem;
+  box-shadow: 0 1px 2px rgba(15, 47, 44, 0.04);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] input[type='search'][name='q']:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 2px 8px rgba(36, 127, 115, 0.12);
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article {
+  background: var(--riality-card);
+  border: 1px solid var(--riality-border);
+  border-radius: 16px;
+  padding: 1rem 1.15rem;
+  margin: 0;
+  text-align: start;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article:hover {
+  border-color: var(--ifm-color-primary-lighter);
+  box-shadow: 0 4px 14px rgba(15, 47, 44, 0.06);
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  text-align: start;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article h2 a {
+  color: var(--ifm-color-primary-darker);
+  text-decoration: none;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article h2 a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article mark {
+  background: rgba(36, 127, 115, 0.14);
+  color: inherit;
+  padding: 0 0.12em;
+  border-radius: 3px;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article p {
+  text-align: start;
+  margin: 0.45rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-700);
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article [class*='searchResultItemPath'] {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article [class*='searchResultItemSummary'] {
+  font-style: normal;
+}
+
+html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper .container > div:has([class*='loadingRing']) {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+
+[data-theme='dark'] html[class*='plugin-@easyops-cn/docusaurus-search-local'] input[type='search'][name='q'] {
+  background-color: var(--riality-card);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2355aa9d'%3E%3Cpath d='M6.03 10.2a4.17 4.17 0 1 1 4.17-4.17 4.16 4.16 0 0 1-4.17 4.17Zm9.69 4.22-4.82-4.82A5.88 5.88 0 0 0 12.06 6.03 6 6 0 1 0 9.6 10.9l4.82 4.82a.9.9 0 0 0 1.3 0 .9.9 0 0 0 0-1.3Z'/%3E%3C/svg%3E");
+  box-shadow: none;
+}
+
+[data-theme='dark'] html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] html[class*='plugin-@easyops-cn/docusaurus-search-local'] .main-wrapper section article mark {
+  background: rgba(85, 170, 157, 0.22);
 }
 /*rtl:end:ignore*/
 
