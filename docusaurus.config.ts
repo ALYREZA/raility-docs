@@ -187,6 +187,29 @@ const config: Config = {
     },
   },
 
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: false,
+        // lunr has no Persian stemmer; Arabic is the closest RTL option.
+        language: ['ar'],
+        removeDefaultStopWordFilter: ['ar', 'en'],
+        removeDefaultStemmer: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchContextByPaths: [
+          {label: 'راهنما', path: 'docs'},
+          {label: 'وبلاگ', path: 'blog'},
+        ],
+        searchBarShortcut: true,
+        searchBarShortcutKeymap: 'mod+k',
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',

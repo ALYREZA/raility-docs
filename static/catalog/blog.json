@@ -1,8 +1,179 @@
 {
   "site": "https://riality.ir",
-  "generatedAt": "2026-07-31T21:18:41.998Z",
-  "count": 10,
+  "generatedAt": "2026-08-02T07:51:12.715Z",
+  "count": 21,
   "posts": [
+    {
+      "title": "۷ کتاب برتر مدیریت مالی شخصی که نگرش شما به پول را تغییر می‌دهند",
+      "description": "معرفی و مقایسه هفت کتاب مهم مدیریت مالی شخصی؛ از روان‌شناسی پول و کنترل هزینه تا ساخت سیستم مالی، استقلال مالی و تصمیم‌گیری بهتر در سرمایه‌گذاری.",
+      "slug": "best-personal-finance-books",
+      "date": "2026-08-02",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "سواد مالی",
+        "کتاب مالی",
+        "رفتار مالی",
+        "سرمایه‌گذاری"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/best-personal-finance-books.jpg",
+      "url": "https://riality.ir/blog/best-personal-finance-books",
+      "path": "/blog/best-personal-finance-books"
+    },
+    {
+      "title": "بودجه‌بندی در دوران تورم؛ چگونه قدرت خرید خود را حفظ کنیم؟",
+      "description": "راهنمای عملی اصلاح بودجه در شرایط تورمی؛ از محاسبه هزینه واقعی زندگی و بازبینی هفتگی تا مدیریت پس‌انداز، صندوق اضطراری و افزایش قیمت‌ها.",
+      "slug": "budgeting-during-inflation",
+      "date": "2026-08-02",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "بودجه‌بندی",
+        "تورم",
+        "قدرت خرید",
+        "کنترل هزینه"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/budgeting-during-inflation.jpg",
+      "url": "https://riality.ir/blog/budgeting-during-inflation",
+      "path": "/blog/budgeting-during-inflation"
+    },
+    {
+      "title": "بولت ژورنال چیست و چطور با آن هزینه‌ها را ثبت کنیم؟",
+      "description": "راهنمای عملی استفاده از Bullet Journal برای ثبت مخارج؛ از ساخت علائم و صفحه روزانه تا بودجه ماهانه، مرور هفتگی و انتقال اطلاعات به ابزار مالی دیجیتال.",
+      "slug": "bullet-journal-expense-tracking",
+      "date": "2026-08-02",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "ثبت هزینه",
+        "بولت ژورنال",
+        "بودجه‌بندی",
+        "عادت مالی"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/bullet-journal-expense-tracking.jpg",
+      "url": "https://riality.ir/blog/bullet-journal-expense-tracking",
+      "path": "/blog/bullet-journal-expense-tracking"
+    },
+    {
+      "title": "۷ عادت مالی ساده که از کتاب‌های مدیریت پول یاد می‌گیریم",
+      "description": "هفت عادت عملی برگرفته از کتاب‌های معتبر مدیریت مالی؛ از ثبت هزینه و پس‌انداز در ابتدای ماه تا کنترل تورم سبک زندگی، تصمیم‌گیری آرام و سرمایه‌گذاری منظم.",
+      "slug": "simple-financial-habits-from-money-books",
+      "date": "2026-08-02",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "عادت مالی",
+        "سواد مالی",
+        "پس‌انداز",
+        "رفتار مالی"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/simple-financial-habits-from-money-books.jpg",
+      "url": "https://riality.ir/blog/simple-financial-habits-from-money-books",
+      "path": "/blog/simple-financial-habits-from-money-books"
+    },
+    {
+      "title": "خلاصه کتاب «ترفند پول، داشتن مقداری از آن است»؛ درس‌های کاربردی و نقد ایده‌ها",
+      "description": "خلاصه تحلیلی کتاب The Trick to Money Is Having Some اثر استوارت وایلد؛ از نگرش به پول و قیمت‌گذاری تا کیفیت، خدمت، تمرکز، برنامه عملی و بخش‌هایی که نباید به‌عنوان توصیه مالی پذیرفت.",
+      "slug": "the-trick-to-money-is-having-some-summary",
+      "date": "2026-08-02",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "کتاب مالی",
+        "روان‌شناسی پول",
+        "کسب‌وکار",
+        "سواد مالی"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/the-trick-to-money-is-having-some-summary.jpg",
+      "url": "https://riality.ir/blog/the-trick-to-money-is-having-some-summary",
+      "path": "/blog/the-trick-to-money-is-having-some-summary"
+    },
+    {
+      "title": "مفاهیم پایه سرمایه‌گذاری؛ راهنمای شناخت بازده، ریسک و انواع دارایی",
+      "description": "پیش از ساخت سبد سرمایه‌گذاری، با تفاوت پس‌انداز و سرمایه‌گذاری، منابع بازده، انواع ریسک، نقدشوندگی، تنوع، هزینه‌ها و معیارهای بررسی هر ابزار آشنا شوید.",
+      "slug": "investment-fundamentals",
+      "date": "2026-08-01T00:58:00+03:30",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "سرمایه‌گذاری",
+        "مفاهیم مالی",
+        "سواد مالی",
+        "مدیریت ریسک"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/investment-fundamentals.jpg",
+      "url": "https://riality.ir/blog/investment-fundamentals",
+      "path": "/blog/investment-fundamentals"
+    },
+    {
+      "title": "مدیریت ریسک در سرمایه‌گذاری؛ چگونه یک استراتژی مقاوم بسازیم؟",
+      "description": "راهنمای مرحله‌به‌مرحله برای تعیین ظرفیت ریسک، ساخت بودجه ریسک، تنوع‌بخشی، کنترل اندازه موقعیت‌ها، حفظ نقدشوندگی و مدیریت افت بازار.",
+      "slug": "investment-risk-management-strategy",
+      "date": "2026-08-01T00:45:00+03:30",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "سرمایه‌گذاری",
+        "مدیریت ریسک",
+        "استراتژی سرمایه‌گذاری",
+        "ساخت ثروت"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/investment-risk-management-strategy.jpg",
+      "url": "https://riality.ir/blog/investment-risk-management-strategy",
+      "path": "/blog/investment-risk-management-strategy"
+    },
+    {
+      "title": "دو حقوق، یک کسری بودجه؛ ۱۰ اشتباه مالی زوج‌های کارمند",
+      "description": "داشتن دو حقوق ماهانه همیشه به معنی امنیت مالی بیشتر نیست. در این راهنما، رفتارهایی را بررسی می‌کنیم که زوج‌های کارمند را با وجود درآمد ثابت به کسری بودجه، بدهی و اختلاف مالی می‌رسانند.",
+      "slug": "financial-mistakes-of-salaried-couples",
+      "date": "2026-08-01",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "مدیریت مالی زوجین",
+        "بودجه مشترک",
+        "درآمد ثابت",
+        "زندگی مشترک"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/financial-mistakes-of-salaried-couples.jpg",
+      "url": "https://riality.ir/blog/financial-mistakes-of-salaried-couples",
+      "path": "/blog/financial-mistakes-of-salaried-couples"
+    },
+    {
+      "title": "چطور هزینه‌ها را ثبت کنیم و ثبت مخارج چه فایده‌ای دارد؟",
+      "description": "یک روش ساده و قابل‌اجرا برای ثبت هزینه‌های شخصی و مشترک؛ از اطلاعات ضروری هر تراکنش و دسته‌بندی مخارج تا مرور هفتگی و تصمیم‌هایی که از داده‌های مالی می‌گیریم.",
+      "slug": "how-to-record-expenses",
+      "date": "2026-08-01",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "ثبت هزینه",
+        "کنترل هزینه",
+        "بودجه‌بندی",
+        "مدیریت مالی زوجین"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/how-to-record-expenses.jpg",
+      "url": "https://riality.ir/blog/how-to-record-expenses",
+      "path": "/blog/how-to-record-expenses"
+    },
     {
       "title": "سرمایه‌گذاری بلندمدت برای ساخت ثروت؛ راهنمای شروع مرحله‌به‌مرحله",
       "description": "چگونه پس از بودجه‌بندی، کنترل بدهی و ساخت صندوق اضطراری، یک برنامه منظم، متنوع و قابل‌ادامه برای سرمایه‌گذاری بلندمدت بسازیم؟",
@@ -21,6 +192,44 @@
       "image": "/img/blog/long-term-investing-wealth-building.jpg",
       "url": "https://riality.ir/blog/long-term-investing-wealth-building",
       "path": "/blog/long-term-investing-wealth-building"
+    },
+    {
+      "title": "اثر روز حقوق؛ چرا اول ماه بیشتر خرج می‌کنیم و آخر ماه تحت فشاریم؟",
+      "description": "پژوهش‌های اقتصاد رفتاری نشان می‌دهند زمان دریافت حقوق می‌تواند احساس ثروت، الگوی خرج و فشار ذهنی را تغییر دهد. در این مطلب، اثر روز حقوق و راه مهار آن برای کارمندان و زوج‌ها را بررسی می‌کنیم.",
+      "slug": "payday-effect",
+      "date": "2026-08-01",
+      "tags": [
+        "اقتصاد رفتاری",
+        "مدیریت حقوق",
+        "مدیریت مالی شخصی",
+        "مدیریت مالی زوجین",
+        "رفتار مالی"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/payday-effect.jpg",
+      "url": "https://riality.ir/blog/payday-effect",
+      "path": "/blog/payday-effect"
+    },
+    {
+      "title": "سرمایه‌گذاری منظم؛ چگونه بدون زمان‌بندی بازار یک برنامه خرید دوره‌ای بسازیم؟",
+      "description": "راهنمای ساخت برنامه سرمایه‌گذاری دوره‌ای بر اساس هدف، بودجه، ترکیب دارایی، هزینه‌ها و قوانین رفتاری؛ همراه با مثال ماهانه، مدیریت مبلغ یک‌جا و بازمتوازن‌سازی.",
+      "slug": "periodic-investing-without-market-timing",
+      "date": "2026-08-01",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "سرمایه‌گذاری",
+        "سرمایه‌گذاری منظم",
+        "زمان‌بندی بازار",
+        "مدیریت ریسک"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/periodic-investing-without-market-timing.jpg",
+      "url": "https://riality.ir/blog/periodic-investing-without-market-timing",
+      "path": "/blog/periodic-investing-without-market-timing"
     },
     {
       "title": "مدیریت هزینه‌های سالانه و نامنظم؛ چگونه برای مخارج آینده از قبل پول کنار بگذاریم؟",

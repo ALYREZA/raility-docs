@@ -1,0 +1,42 @@
+{
+  "theme.SearchBar.label": {
+    "message": "جستجو…",
+    "description": "Placeholder label for the search bar"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "مشاهدهٔ همهٔ نتایج",
+    "description": "Link to the full search results page"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "نتیجه‌ای پیدا نشد",
+    "description": "Text shown when search returns no results"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "مشاهدهٔ همهٔ نتایج در «{context}»",
+    "description": "Link to search within a specific context"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "مشاهدهٔ نتایج خارج از «{context}»",
+    "description": "Link to search outside the current context"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "نتایج برای «{query}»",
+    "description": "Title of the search page when a query is present"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "جستجو در محتوا",
+    "description": "Title of the search page when no query is present"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "{count} نتیجه",
+    "description": "Number of documents found on the search page"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "نتیجه‌ای پیدا نشد",
+    "description": "Text shown on the search page when no results are found"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "همهٔ بخش‌ها",
+    "description": "Label for searching across all contexts"
+  }
+}
