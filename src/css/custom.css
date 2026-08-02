@@ -420,6 +420,28 @@ html[dir='rtl'] .quickLinksTitle {
   margin-bottom: 1.25rem;
 }
 
+.book-cover-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.book-cover-wrap img {
+  display: block;
+  width: auto;
+  max-width: 11rem;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(22, 70, 64, 0.12);
+  background: var(--riality-surface);
+}
+
+@media screen and (min-width: 768px) {
+  .book-cover-wrap img {
+    max-width: 12.5rem;
+  }
+}
+
 .blog-wrapper article footer {
   margin-top: 1rem !important;
   font-size: 0.9rem;
