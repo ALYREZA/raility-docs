@@ -17,3 +17,248 @@ product:
   label: محصول
   permalink: /product
   description: معرفی قابلیت‌های اپ ریالیتی
+
+مدیریت مالی شخصی:
+  label: مدیریت مالی شخصی
+  permalink: /personal-finance
+  description: مطالب مربوط به مدیریت پول و تصمیم‌های مالی روزمره
+
+کنترل هزینه:
+  label: کنترل هزینه
+  permalink: /expense-control
+  description: روش‌های کاهش و کنترل هزینه‌های غیرضروری
+
+بودجه‌بندی:
+  label: بودجه‌بندی
+  permalink: /budgeting
+  description: ساخت و اجرای بودجه ماهانه و سالانه
+
+درآمد ثابت:
+  label: درآمد ثابت
+  permalink: /fixed-income
+  description: مدیریت مالی برای حقوق‌بگیران و درآمد ثابت
+
+پس‌انداز:
+  label: پس‌انداز
+  permalink: /saving
+  description: عادت‌ها و روش‌های پس‌انداز منظم
+
+صندوق اضطراری:
+  label: صندوق اضطراری
+  permalink: /emergency-fund
+  description: ساخت و نگهداری پس‌انداز اضطراری
+
+امنیت مالی:
+  label: امنیت مالی
+  permalink: /financial-security
+  description: ایجاد حاشیه امنیت در برابر شوک‌های مالی
+
+حقوق:
+  label: حقوق
+  permalink: /salary
+  description: مدیریت حقوق ماهانه و جریان نقدی
+
+برنامه خرج:
+  label: برنامه خرج
+  permalink: /spending-plan
+  description: برنامه‌ریزی خرج پس از دریافت درآمد
+
+هدف مالی:
+  label: هدف مالی
+  permalink: /financial-goals
+  description: تعریف و پیگیری اهداف مالی مشخص
+
+هزینه‌های سالانه:
+  label: هزینه‌های سالانه
+  permalink: /annual-expenses
+  description: برنامه‌ریزی برای هزینه‌های سالانه
+
+هزینه‌های نامنظم:
+  label: هزینه‌های نامنظم
+  permalink: /irregular-expenses
+  description: مدیریت هزینه‌های غیرماهانه و پیش‌بینی‌نشده
+
+ثبت هزینه:
+  label: ثبت هزینه
+  permalink: /expense-tracking
+  description: ثبت و پیگیری مخارج روزانه
+
+مدیریت مالی زوجین:
+  label: مدیریت مالی زوجین
+  permalink: /couples-finance
+  description: پول، بودجه و تصمیم‌های مالی در زندگی مشترک
+
+بودجه مشترک:
+  label: بودجه مشترک
+  permalink: /shared-budget
+  description: ساخت و اجرای بودجه مشترک برای زوج‌ها
+
+زندگی مشترک:
+  label: زندگی مشترک
+  permalink: /shared-life
+  description: هماهنگی مالی در زندگی مشترک
+
+سرمایه‌گذاری:
+  label: سرمایه‌گذاری
+  permalink: /investing
+  description: مفاهیم و روش‌های سرمایه‌گذاری
+
+مفاهیم مالی:
+  label: مفاهیم مالی
+  permalink: /finance-concepts
+  description: واژه‌ها و مفاهیم پایه مالی
+
+سواد مالی:
+  label: سواد مالی
+  permalink: /financial-literacy
+  description: آموزش مفاهیم و مهارت‌های مالی
+
+مدیریت ریسک:
+  label: مدیریت ریسک
+  permalink: /risk-management
+  description: کنترل ریسک در سرمایه‌گذاری و تصمیم‌های مالی
+
+بدهی:
+  label: بدهی
+  permalink: /debt
+  description: مدیریت و بازپرداخت بدهی
+
+اقتصاد رفتاری:
+  label: اقتصاد رفتاری
+  permalink: /behavioral-economics
+  description: روان‌شناسی تصمیم‌های مالی و اثر آن بر خرج
+
+مدیریت حقوق:
+  label: مدیریت حقوق
+  permalink: /salary-management
+  description: برنامه‌ریزی برای دریافت و خرج حقوق
+
+رفتار مالی:
+  label: رفتار مالی
+  permalink: /money-behavior
+  description: عادت‌ها و الگوهای رفتاری مرتبط با پول
+
+ساخت ثروت:
+  label: ساخت ثروت
+  permalink: /wealth-building
+  description: مسیرهای بلندمدت برای رشد دارایی
+
+برنامه‌ریزی مالی:
+  label: برنامه‌ریزی مالی
+  permalink: /financial-planning
+  description: برنامه‌ریزی میان‌مدت و بلندمدت مالی
+
+استراتژی سرمایه‌گذاری:
+  label: استراتژی سرمایه‌گذاری
+  permalink: /investment-strategy
+  description: رویکردها و چارچوب‌های سرمایه‌گذاری
+
+سرمایه‌گذاری منظم:
+  label: سرمایه‌گذاری منظم
+  permalink: /periodic-investing
+  description: خرید دوره‌ای و سرمایه‌گذاری مستمر
+
+زمان‌بندی بازار:
+  label: زمان‌بندی بازار
+  permalink: /market-timing
+  description: چالش‌ها و محدودیت‌های زمان‌بندی بازار
+
+بولت ژورنال:
+  label: بولت ژورنال
+  permalink: /bullet-journal
+  description: ثبت هزینه و برنامه مالی با بولت ژورنال
+
+عادت مالی:
+  label: عادت مالی
+  permalink: /money-habits
+  description: ساخت عادت‌های پایدار مالی
+
+تورم:
+  label: تورم
+  permalink: /inflation
+  description: اثر تورم بر قدرت خرید و بودجه
+
+قدرت خرید:
+  label: قدرت خرید
+  permalink: /purchasing-power
+  description: حفظ ارزش پول در برابر افزایش قیمت‌ها
+
+خرید آنلاین:
+  label: خرید آنلاین
+  permalink: /online-shopping
+  description: مدیریت هزینه و رفتار در خرید اینترنتی
+
+طنز مالی:
+  label: طنز مالی
+  permalink: /money-humor
+  description: نگاه طنزآمیز به اشتباه‌ها و عادت‌های مالی
+
+کتاب مالی:
+  label: کتاب مالی
+  permalink: /finance-books
+  description: معرفی و خلاصه کتاب‌های مدیریت پول
+
+روان‌شناسی پول:
+  label: روان‌شناسی پول
+  permalink: /psychology-of-money
+  description: رابطه ذهن، احساس و تصمیم‌های مالی
+
+کسب‌وکار:
+  label: کسب‌وکار
+  permalink: /business
+  description: پول و تصمیم‌گیری در فضای کسب‌وکار
+
+نسل Z:
+  label: نسل Z
+  permalink: /gen-z
+  description: مدیریت مالی و سرمایه‌گذاری برای نسل زد
+
+خرید هوشمند:
+  label: خرید هوشمند
+  permalink: /smart-shopping
+  description: تصمیم‌گیری آگاهانه هنگام خرید
+
+تخفیف:
+  label: تخفیف
+  permalink: /discounts
+  description: تشخیص تخفیف واقعی از ترفندهای فروش
+
+آینده فرزندان:
+  label: آینده فرزندان
+  permalink: /children-future
+  description: پس‌انداز و سرمایه‌گذاری برای آینده فرزندان
+
+والدین:
+  label: والدین
+  permalink: /parents
+  description: راهنمای مالی برای والدین
+
+نسل آلفا:
+  label: نسل آلفا
+  permalink: /gen-alpha
+  description: ویژگی‌ها و بازه سنی نسل آلفا
+
+نسل بتا:
+  label: نسل بتا
+  permalink: /gen-beta
+  description: ویژگی‌ها و بازه سنی نسل بتا
+
+جمعیت‌شناسی:
+  label: جمعیت‌شناسی
+  permalink: /demographics
+  description: دسته‌بندی نسل‌ها و گروه‌های جمعیتی
+
+جامعه‌شناسی:
+  label: جامعه‌شناسی
+  permalink: /sociology
+  description: نگاه اجتماعی به نسل‌ها و رفتارها
+
+ایران:
+  label: ایران
+  permalink: /iran
+  description: مطالب با تمرکز بر شرایط ایران
+
+ثروت:
+  label: ثروت
+  permalink: /wealth
+  description: مسیر ساخت و حفظ ثروت در بلندمدت

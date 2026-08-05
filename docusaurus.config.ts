@@ -29,7 +29,7 @@ const structuredData = {
       url: `${siteUrl}/`,
       name: 'ریالیتی',
       description:
-        'مربی پولی شخصی — ساده ثبت کن، با خیال راحت خرج کن. راهنمای فارسی اپ ریالیتی.',
+        'همین حالا بدانید چقدر می‌توانید با خیال راحت خرج کنید؛ بدون داشبوردهای شلوغ و پیچیده. کاملاً فارسی، با تقویم جلالی، آفلاین‌محور و با نگهداری داده‌ها فقط روی گوشی شما.',
       inLanguage: 'fa-IR',
       publisher: {'@id': `${siteUrl}/#organization`},
     },
@@ -81,7 +81,8 @@ const structuredData = {
 
 const config: Config = {
   title: 'ریالیتی',
-  tagline: 'مربی پولی شخصی — ساده ثبت کن، با خیال راحت خرج کن',
+  tagline:
+    'بدانید چقدر می‌توانید حساب‌شده خرج کنید؛ فارسی، جلالی، آفلاین و روی گوشی شما.',
   // Google Search prefers a square PNG that is a multiple of 48px.
   favicon: 'img/favicon-96x96.png',
 

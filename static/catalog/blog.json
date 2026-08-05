@@ -1,8 +1,84 @@
 {
   "site": "https://riality.ir",
-  "generatedAt": "2026-08-02T08:08:16.235Z",
-  "count": 21,
+  "generatedAt": "2026-08-05T22:07:16.469Z",
+  "count": 27,
   "posts": [
+    {
+      "title": "۶ گام عملی برای میلیونر شدن با پس‌انداز و سرمایه‌گذاری",
+      "description": "چگونه با شروع زودهنگام، پس‌انداز منظم، کنترل هزینه‌ها، افزایش درآمد و سرمایه‌گذاری بلندمدت به هدف یک میلیون دلار نزدیک شویم.",
+      "slug": "six-steps-to-become-millionaire",
+      "date": "2026-08-06",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "پس‌انداز",
+        "سرمایه‌گذاری",
+        "ثروت"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/six-steps-to-become-millionaire.jpg",
+      "url": "https://riality.ir/blog/six-steps-to-become-millionaire",
+      "path": "/blog/six-steps-to-become-millionaire"
+    },
+    {
+      "title": "سرمایه‌گذاری برای نسل Z؛ راهنمای شروع با درآمد کم و افق بلندمدت",
+      "description": "نسل Z چگونه بدون دنبال کردن موج‌های شبکه‌های اجتماعی، یک برنامه سرمایه‌گذاری ساده، منظم و متناسب با درآمد خود بسازد؟",
+      "slug": "gen-z-investing-guide",
+      "date": "2026-08-03",
+      "tags": [
+        "سرمایه‌گذاری",
+        "نسل Z",
+        "مدیریت مالی شخصی",
+        "سواد مالی",
+        "مدیریت ریسک"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/gen-z-investing-guide.jpg",
+      "url": "https://riality.ir/blog/gen-z-investing-guide",
+      "path": "/blog/gen-z-investing-guide"
+    },
+    {
+      "title": "نسل Z، آلفا، بتا و نسل‌های قبل؛ این نام‌ها از کجا آمده‌اند؟",
+      "description": "راهنمای بنیادی شناخت نسل‌های جمعیتی از نسل خاموش و بیبی‌بومر تا نسل‌های X، هزاره، Z، آلفا و بتا؛ همراه با بازه‌های تولد بر اساس تقویم هجری شمسی و کاربرد آن‌ها در ایران.",
+      "slug": "generations-z-alpha-beta-explained",
+      "date": "2026-08-03",
+      "tags": [
+        "نسل Z",
+        "نسل آلفا",
+        "نسل بتا",
+        "جمعیت‌شناسی",
+        "جامعه‌شناسی",
+        "ایران"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/generations-z-alpha-beta-explained.jpg",
+      "url": "https://riality.ir/blog/generations-z-alpha-beta-explained",
+      "path": "/blog/generations-z-alpha-beta-explained"
+    },
+    {
+      "title": "سرمایه‌گذاری والدین برای آینده فرزندان در ایران؛ از کجا و چه زمانی شروع کنیم؟",
+      "description": "راهنمای مرحله‌به‌مرحله والدین ایرانی برای ساخت سرمایه بلندمدت فرزند؛ با تمرکز بر تورم، بازده واقعی، انتخاب افق زمانی، تنوع و آموزش مالی کودک.",
+      "slug": "investing-for-children-in-iran",
+      "date": "2026-08-03",
+      "tags": [
+        "سرمایه‌گذاری",
+        "آینده فرزندان",
+        "والدین",
+        "تورم",
+        "سواد مالی"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/investing-for-children-in-iran.jpg",
+      "url": "https://riality.ir/blog/investing-for-children-in-iran",
+      "path": "/blog/investing-for-children-in-iran"
+    },
     {
       "title": "۷ کتاب برتر مدیریت مالی شخصی که نگرش شما به پول را تغییر می‌دهند",
       "description": "معرفی و مقایسه هفت کتاب مهم مدیریت مالی شخصی؛ از روان‌شناسی پول و کنترل هزینه تا ساخت سیستم مالی، استقلال مالی و تصمیم‌گیری بهتر در سرمایه‌گذاری.",
@@ -59,6 +135,44 @@
       "image": "/img/blog/bullet-journal-expense-tracking.jpg",
       "url": "https://riality.ir/blog/bullet-journal-expense-tracking",
       "path": "/blog/bullet-journal-expense-tracking"
+    },
+    {
+      "title": "چطور فقط برای گرفتن ارسال رایگان، دو برابر بیشتر خرج می‌کنیم؟",
+      "description": "یک نگاه طنز و کاربردی به تله ارسال رایگان؛ چرا برای فرار از هزینه پست، کالاهای غیرضروری می‌خریم و چگونه قبل از پرداخت، تصمیم منطقی‌تری بگیریم.",
+      "slug": "free-shipping-overspending",
+      "date": "2026-08-02",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "خرید آنلاین",
+        "رفتار مالی",
+        "کنترل هزینه",
+        "طنز مالی"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/free-shipping-overspending.jpg",
+      "url": "https://riality.ir/blog/free-shipping-overspending",
+      "path": "/blog/free-shipping-overspending"
+    },
+    {
+      "title": "حقیقت تخفیف‌ها؛ فروشگاه‌ها چگونه با عددها و ذهن ما بازی می‌کنند؟",
+      "description": "بررسی علمی ترفندهای تخفیف؛ از «یکی بخر، دوتا ببر» و کالای اضافه تا قیمت خط‌خورده، عدد ۹، ارسال رایگان، کش‌بک، شمارش معکوس و تخفیف‌های پشت‌سرهم.",
+      "slug": "science-of-discounts-and-sales-tricks",
+      "date": "2026-08-02",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "رفتار مالی",
+        "خرید هوشمند",
+        "تخفیف",
+        "اقتصاد رفتاری"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/science-of-discounts-and-sales-tricks.jpg",
+      "url": "https://riality.ir/blog/science-of-discounts-and-sales-tricks",
+      "path": "/blog/science-of-discounts-and-sales-tricks"
     },
     {
       "title": "۷ عادت مالی ساده که از کتاب‌های مدیریت پول یاد می‌گیریم",

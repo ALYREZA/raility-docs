@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import {
   motion,
@@ -14,6 +13,9 @@ import {
 } from 'motion/react';
 
 import styles from './index.module.css';
+
+const HERO_LEAD =
+  'همین حالا بدانید چقدر می‌توانید با خیال راحت خرج کنید؛ بدون داشبوردهای شلوغ و پیچیده. کاملاً فارسی، با تقویم جلالی، آفلاین‌محور و با نگهداری داده‌ها فقط روی گوشی شما.';
 
 const fadeUp = {
   hidden: {opacity: 0, y: 28},
@@ -53,11 +55,6 @@ function HomepageHeader() {
             transition: {staggerChildren: 0.1, delayChildren: 0.05},
           },
         }}>
-        <motion.div className={styles.heroBadgeRow} variants={fadeUp}>
-          <span className={styles.heroBadge}>راهنمای کاربری</span>
-          <span className={styles.heroBadge}>فارسی · آفلاین‌اول</span>
-        </motion.div>
-
         <motion.div variants={fadeUp}>
           <Heading as="h1" className={clsx('hero__title', styles.heroTitle)}>
             {siteConfig.title}
@@ -71,15 +68,8 @@ function HomepageHeader() {
         </motion.p>
 
         <motion.p className={styles.heroLead} variants={fadeUp}>
-          درآمد و هزینه را سریع ثبت کنید، وضعیت ماه را با کلمات ساده ببینید، و
-          بدون داشبورد شلوغ تصمیم بگیرید.
+          {HERO_LEAD}
         </motion.p>
-
-        <motion.ul className={styles.heroHighlights} variants={fadeUp}>
-          <li>ثبت در چند ثانیه</li>
-          <li>داده روی گوشی شما</li>
-          <li>تقویم جلالی</li>
-        </motion.ul>
 
         <motion.div className={styles.buttons} variants={fadeUp}>
           <Link
@@ -100,23 +90,14 @@ function HomepageHeader() {
           </Link>
         </motion.div>
       </motion.div>
-
-      <div className={styles.scrollCue} aria-hidden="true">
-        <span className={styles.scrollCueDot} />
-      </div>
     </header>
   );
 }
 
 export default function Home(): ReactNode {
   return (
-    <Layout
-      title="راهنمای کاربری"
-      description="راهنمای فارسی ریالیتی — معرفی کوتاه و آموزش هر بخش اپلیکیشن">
+    <Layout title="راهنمای کاربری" description={HERO_LEAD}>
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }
