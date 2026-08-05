@@ -29,7 +29,7 @@ const structuredData = {
       url: `${siteUrl}/`,
       name: 'ریالیتی',
       description:
-        'همین حالا بدانید چقدر می‌توانید با خیال راحت خرج کنید؛ بدون داشبوردهای شلوغ و پیچیده. کاملاً فارسی، با تقویم جلالی، آفلاین‌محور و با نگهداری داده‌ها فقط روی گوشی شما.',
+        'بدانید چقدر می‌توانید حساب‌شده خرج کنید؛ فارسی، جلالی، آفلاین و روی گوشی شما.',
       inLanguage: 'fa-IR',
       publisher: {'@id': `${siteUrl}/#organization`},
     },
@@ -298,6 +298,11 @@ const config: Config = {
           to: '/blog',
           label: 'وبلاگ',
           position: 'right',
+        },
+        {
+          href: 'https://cafebazaar.ir/app/ir.riality.app',
+          label: 'دانلود اپ',
+          position: 'left',
         },
       ],
     },

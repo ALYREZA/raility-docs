@@ -1,102 +1,251 @@
-.heroBanner {
+.hero {
+  /* Matched to app screenshot: charcoal + seafoam teal */
+  --hero-ink: #f4f7f6;
+  --hero-ink-soft: rgba(232, 240, 237, 0.72);
+  --hero-teal: #54b3a4;
+  --hero-teal-deep: #3d9a8c;
+  --hero-cta: #54b3a4;
+  --hero-surface: #141617;
+  --hero-glow: rgba(84, 179, 164, 0.22);
+
   position: relative;
   overflow: hidden;
   min-height: calc(100dvh - var(--ifm-navbar-height));
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 3rem 1rem 3.5rem;
-  text-align: center;
-  color: #fff;
+  padding: 2.5rem 0 3rem;
+  color: var(--hero-ink);
   background:
-    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(135, 202, 189, 0.35), transparent 55%),
-    linear-gradient(165deg, #2f9f90 0%, #247f73 38%, #18564f 72%, #0f2f2c 100%);
+    radial-gradient(ellipse 80% 60% at 88% 20%, var(--hero-glow), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 8% 85%, rgba(84, 179, 164, 0.12), transparent 50%),
+    linear-gradient(165deg, #1a1c1e 0%, #141617 45%, #101213 100%);
 }
 
-.heroGlow {
+.heroWash {
   position: absolute;
-  inset: -30% -15% auto;
-  height: 110%;
+  inset: -25% 35% auto -15%;
+  height: 90%;
   background:
-    radial-gradient(circle at 18% 35%, rgba(181, 224, 215, 0.28) 0%, transparent 42%),
-    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.14) 0%, transparent 38%);
+    radial-gradient(circle at 35% 40%, rgba(84, 179, 164, 0.16) 0%, transparent 55%);
   pointer-events: none;
   will-change: transform;
 }
 
-.heroMesh {
+.heroGrain {
   position: absolute;
   inset: 0;
-  opacity: 0.18;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 20%, transparent 75%);
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   pointer-events: none;
 }
 
-.heroInner {
+.heroGrid {
   position: relative;
   z-index: 1;
-  max-width: 38rem;
-  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
 }
 
-.heroTitle {
-  font-size: clamp(2.6rem, 7vw, 3.6rem);
-  font-weight: 800;
-  margin-bottom: 0.85rem;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
-}
-
-.heroSubtitle {
-  font-size: clamp(1.1rem, 2.6vw, 1.35rem);
-  font-weight: 600;
-  opacity: 0.98;
-  margin-bottom: 1.15rem;
-  line-height: 1.75;
-}
-
-.heroLead {
-  font-size: 1.02rem;
-  line-height: 2;
-  opacity: 0.92;
-  margin: 0 auto 1.85rem;
+.heroCopy {
+  text-align: start;
   max-width: 34rem;
 }
 
-.buttons {
+.brand {
+  margin: 0 0 1rem;
+  font-size: clamp(2.75rem, 9vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: #fff;
+}
+
+.headline {
+  margin: 0 0 1rem;
+  font-size: clamp(1.65rem, 4.5vw, 2.35rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  color: var(--hero-ink);
+}
+
+.support {
+  margin: 0 0 1.75rem;
+  max-width: 28rem;
+  font-size: clamp(1rem, 2.2vw, 1.125rem);
+  line-height: 1.85;
+  color: var(--hero-ink-soft);
+}
+
+.ctaRow {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 0.75rem 1rem;
 }
 
 .primaryCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: var(--hero-cta);
+  color: #fff !important;
   font-weight: 700;
-  border: none;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  font-size: 1rem;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 28px rgba(84, 179, 164, 0.28);
+}
+
+.primaryCta:hover {
+  background: #6bc4b6;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px rgba(84, 179, 164, 0.36);
 }
 
 .secondaryCta {
-  color: #fff !important;
-  border-color: rgba(255, 255, 255, 0.55) !important;
+  display: inline-flex;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0.55rem 0.35rem;
+  color: var(--hero-teal) !important;
+  font-weight: 600;
+  font-size: 0.98rem;
+  text-decoration: none !important;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .secondaryCta:hover {
-  background: rgba(255, 255, 255, 0.12);
   color: #fff !important;
+  border-bottom-color: rgba(84, 179, 164, 0.45);
 }
 
-@media screen and (min-width: 768px) {
-  .heroBanner {
-    padding: 4rem 1.5rem 4.5rem;
+.phoneStage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phoneFloat {
+  will-change: transform;
+  /* Extra space so outer bezel box-shadow is not clipped */
+  padding: 0.7rem;
+}
+
+.phoneFrame {
+  position: relative;
+  width: min(14rem, 48vw);
+  aspect-ratio: 422 / 1024;
+  border-radius: 2.35rem;
+  background: #0a0a0a;
+  overflow: hidden;
+  /* Outer bezel drawn outside the screen so the image can fill 100% */
+  box-shadow:
+    0 0 0 0.55rem #1c1c1e,
+    0 0 0 0.62rem #2c2c2e,
+    0 28px 60px rgba(0, 0, 0, 0.45);
+}
+
+.phoneImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.phoneBtnSilent,
+.phoneBtnVolumeUp,
+.phoneBtnVolumeDown,
+.phoneBtnPower {
+  position: absolute;
+  background: #2c2c2e;
+  border-radius: 1px;
+}
+
+/*rtl:begin:ignore*/
+.phoneBtnSilent {
+  top: 17%;
+  left: -0.13rem;
+  width: 0.13rem;
+  height: 1rem;
+}
+
+.phoneBtnVolumeUp {
+  top: 26%;
+  left: -0.15rem;
+  width: 0.15rem;
+  height: 1.85rem;
+}
+
+.phoneBtnVolumeDown {
+  top: 38%;
+  left: -0.15rem;
+  width: 0.15rem;
+  height: 1.85rem;
+}
+
+.phoneBtnPower {
+  top: 30%;
+  right: -0.15rem;
+  width: 0.15rem;
+  height: 2.4rem;
+}
+/*rtl:end:ignore*/
+
+@media screen and (min-width: 900px) {
+  .hero {
+    padding: 3.5rem 0 4rem;
   }
 
-  .heroLead {
-    font-size: 1.08rem;
+  .heroGrid {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3.5rem;
+    justify-content: space-between;
   }
+
+  .phoneFrame {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .heroCopy {
+    max-width: 36rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .support {
+    margin-inline: auto;
+  }
+
+  .ctaRow {
+    justify-content: center;
+  }
+}
+
+/* Transparent navbar over dark hero — scoped to homepage only */
+:global(html.home-hero) :global(.navbar) {
+  --ifm-navbar-background-color: rgba(20, 22, 23, 0.72);
+  --ifm-navbar-link-color: rgba(244, 247, 246, 0.88);
+  --ifm-navbar-link-hover-color: #54b3a4;
+  backdrop-filter: blur(12px);
+  box-shadow: none;
+  border-bottom: 1px solid rgba(84, 179, 164, 0.12);
+}
+
+:global(html.home-hero) :global(.navbar__title) {
+  color: #fff;
+}
+
+:global(html.home-hero) :global(.navbar-sidebar) {
+  --ifm-navbar-background-color: #141617;
 }

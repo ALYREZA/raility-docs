@@ -1,18 +1,19 @@
 {
   "site": "https://riality.ir",
-  "generatedAt": "2026-08-05T22:07:16.469Z",
+  "generatedAt": "2026-08-05T22:21:13.727Z",
   "count": 27,
   "posts": [
     {
       "title": "۶ گام عملی برای میلیونر شدن با پس‌انداز و سرمایه‌گذاری",
-      "description": "چگونه با شروع زودهنگام، پس‌انداز منظم، کنترل هزینه‌ها، افزایش درآمد و سرمایه‌گذاری بلندمدت به هدف یک میلیون دلار نزدیک شویم.",
+      "description": "خلاصه کاربردی ۶ گام Investopedia برای ساخت ثروت بلندمدت؛ از شروع زودهنگام و سود مرکب تا کنترل بدهی، نرخ پس‌انداز ۱۵٪، افزایش درآمد و مهار تورم سبک زندگی.",
       "slug": "six-steps-to-become-millionaire",
       "date": "2026-08-06",
       "tags": [
         "مدیریت مالی شخصی",
         "پس‌انداز",
         "سرمایه‌گذاری",
-        "ثروت"
+        "ثروت",
+        "ساخت ثروت"
       ],
       "authors": [
         "riality"
@@ -263,7 +264,7 @@
         "زندگی مشترک"
       ],
       "authors": [
-        "name: تیم ریالیتی"
+        "riality"
       ],
       "image": "/img/blog/financial-mistakes-of-salaried-couples.jpg",
       "url": "https://riality.ir/blog/financial-mistakes-of-salaried-couples",
@@ -282,7 +283,7 @@
         "مدیریت مالی زوجین"
       ],
       "authors": [
-        "name: تیم ریالیتی"
+        "riality"
       ],
       "image": "/img/blog/how-to-record-expenses.jpg",
       "url": "https://riality.ir/blog/how-to-record-expenses",
@@ -320,7 +321,7 @@
         "رفتار مالی"
       ],
       "authors": [
-        "name: تیم ریالیتی"
+        "riality"
       ],
       "image": "/img/blog/payday-effect.jpg",
       "url": "https://riality.ir/blog/payday-effect",
@@ -339,7 +340,7 @@
         "مدیریت ریسک"
       ],
       "authors": [
-        "name: تیم ریالیتی"
+        "riality"
       ],
       "image": "/img/blog/periodic-investing-without-market-timing.jpg",
       "url": "https://riality.ir/blog/periodic-investing-without-market-timing",
