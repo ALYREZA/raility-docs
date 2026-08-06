@@ -331,6 +331,30 @@ html[dir='rtl'] .quickLinksTitle {
   opacity: 0.85;
 }
 
+/*
+  Infima sets .footer__link-item { width: max-content } below 996px.
+  Long Persian blog titles then widen the page and cause horizontal scroll.
+*/
+.footer__col {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.footer__items,
+.footer__item,
+.footer__link-item {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+}
+
+@media screen and (max-width: 996px) {
+  .footer__link-item {
+    width: auto;
+  }
+}
+
 /* -------------------------------------------------------------------------- */
 /* Blog list / post readability (default Infima title is 3rem — too large)   */
 /* -------------------------------------------------------------------------- */
