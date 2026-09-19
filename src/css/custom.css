@@ -425,6 +425,26 @@ html[dir='rtl'] .quickLinksTitle {
   margin-bottom: 0;
 }
 
+/* List/tag pages: frontmatter image as the card cover, above the title */
+.blogListCover {
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.blogListCover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  background: var(--riality-surface);
+}
+
+/* Avoid a duplicate cover: hide the first markdown image on list cards */
+article:has(.blogListCover) .markdown > p:first-child:has(> img:only-child) {
+  display: none;
+}
+
 /* First markdown image in a post acts as the cover */
 .blog-wrapper article .markdown > p:first-child img {
   display: block;
