@@ -1,8 +1,219 @@
 {
   "site": "https://riality.ir",
-  "generatedAt": "2026-08-05T22:21:13.727Z",
-  "count": 27,
+  "generatedAt": "2026-09-19T12:57:56.352Z",
+  "count": 38,
   "posts": [
+    {
+      "title": "چقدر باید پس‌انداز کنیم؟ یک روش واقع‌بینانه برای تعیین نرخ پس‌انداز",
+      "description": "چطور بدون تکیه بر درصدهای ثابت، نرخ پس‌انداز مناسب خودمان را پیدا کنیم؟ یک روش عملی بر اساس درآمد، هزینه‌های ضروری، اهداف مالی و مرحله زندگی.",
+      "slug": "realistic-savings-rate",
+      "date": "2026-09-19",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "پس‌انداز",
+        "بودجه‌بندی",
+        "برنامه‌ریزی مالی",
+        "سرمایه‌گذاری"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "url": "https://riality.ir/blog/realistic-savings-rate",
+      "path": "/blog/realistic-savings-rate"
+    },
+    {
+      "title": "حقوقمان را چطور تقسیم کنیم؟ یک سیستم ساده برای روز اول هر ماه",
+      "description": "یک روش عملی برای تقسیم حقوق در همان روز اول ماه؛ از هزینه‌های ضروری و مخارج دوره‌ای تا پس‌انداز، سرمایه‌گذاری و پول آزاد.",
+      "slug": "salary-allocation-system",
+      "date": "2026-09-19",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "بودجه‌بندی",
+        "پس‌انداز",
+        "حقوق",
+        "برنامه‌ریزی مالی"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/salary-allocation-system.jpg",
+      "url": "https://riality.ir/blog/salary-allocation-system",
+      "path": "/blog/salary-allocation-system"
+    },
+    {
+      "title": "اگر درآمدتان فردا قطع شود، چند ماه دوام می‌آورید؟",
+      "description": "اگر حقوق یا درآمد اصلی شما فردا قطع شود، چند ماه می‌توانید بدون بدهی جدید زندگی را ادامه دهید؟ در این راهنما دوام مالی یا Financial Runway را محاسبه می‌کنیم و می‌بینیم چگونه می‌توان آن را مرحله‌به‌مرحله بیشتر کرد.",
+      "slug": "income-stops-financial-runway",
+      "date": "2026-08-29",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "امنیت مالی",
+        "صندوق اضطراری",
+        "بودجه‌بندی",
+        "پس‌انداز"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/income-stops-financial-runway.jpg",
+      "url": "https://riality.ir/blog/income-stops-financial-runway",
+      "path": "/blog/income-stops-financial-runway"
+    },
+    {
+      "title": "خرید قسطی چگونه قیمت واقعی کالا را از ذهن ما پنهان می‌کند؟",
+      "description": "چرا نمایش قیمت به شکل «ماهی چند میلیون تومان» می‌تواند یک کالای گران را ارزان‌تر نشان دهد؟ بررسی روان‌شناسی خرید قسطی، پژوهش‌های BNPL، روش محاسبه قیمت واقعی و چک‌لیست قبل از خرید.",
+      "slug": "installment-payment-real-price",
+      "date": "2026-08-29",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "رفتار مالی",
+        "خرید قسطی",
+        "اقتصاد رفتاری",
+        "بدهی"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/installment-payment-real-price.jpg",
+      "url": "https://riality.ir/blog/installment-payment-real-price",
+      "path": "/blog/installment-payment-real-price"
+    },
+    {
+      "title": "تورم سبک زندگی؛ چرا با بیشتر شدن درآمد، خرج ما هم بیشتر می‌شود؟",
+      "description": "چرا افزایش حقوق همیشه به پس‌انداز بیشتر منجر نمی‌شود؟ تورم سبک زندگی را از افزایش واقعی قیمت‌ها جدا می‌کنیم و یک روش عملی برای تبدیل رشد درآمد به امنیت مالی و کیفیت زندگی بهتر می‌سازیم.",
+      "slug": "lifestyle-inflation",
+      "date": "2026-08-29",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "رفتار مالی",
+        "بودجه‌بندی",
+        "پس‌انداز",
+        "اقتصاد رفتاری"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/lifestyle-inflation.jpg",
+      "url": "https://riality.ir/blog/lifestyle-inflation",
+      "path": "/blog/lifestyle-inflation"
+    },
+    {
+      "title": "حداقل هزینه زندگی شما چقدر است؟",
+      "description": "حداقل هزینه واقعی زندگی شما در ماه چقدر است؟ در این راهنما هزینه ضروری، هزینه عادی و بودجه بحران را از هم جدا می‌کنیم تا بتوانید صندوق اضطراری، دوام مالی و حداقل درآمد موردنیازتان را دقیق‌تر محاسبه کنید.",
+      "slug": "minimum-cost-of-living",
+      "date": "2026-08-29",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "بودجه‌بندی",
+        "امنیت مالی",
+        "هزینه‌های ضروری",
+        "صندوق اضطراری"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/minimum-cost-of-living.jpg",
+      "url": "https://riality.ir/blog/minimum-cost-of-living",
+      "path": "/blog/minimum-cost-of-living"
+    },
+    {
+      "title": "هوش مصنوعی؛ موتورسیکلتی برای ذهن",
+      "description": "هوش مصنوعی قرار نیست فقط کارهای فعلی را سریع‌تر کند؛ می‌تواند فاصله میان ایده و ساختن، یادگیری و اجرا را به‌شدت کاهش دهد. نگاهی کاربردی به ایده‌های Naval Ravikant درباره هوش مصنوعی و آینده کار.",
+      "slug": "ai-motorcycle-for-the-mind",
+      "date": "2026-08-08",
+      "tags": [
+        "هوش مصنوعی",
+        "آینده کار",
+        "برنامه‌نویسی",
+        "بهره‌وری",
+        "یادگیری"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/ai-motorcycle-for-the-mind.jpg",
+      "url": "https://riality.ir/blog/ai-motorcycle-for-the-mind",
+      "path": "/blog/ai-motorcycle-for-the-mind"
+    },
+    {
+      "title": "چطور زمان و پولمان را بدون اینکه متوجه شویم هدر می‌دهیم؟",
+      "description": "خطرناک‌ترین اتلاف‌ها همیشه شبیه ولخرجی یا تنبلی نیستند. گاهی یک سرمایه‌گذاری ظاهراً منطقی پول را از بین می‌برد و کارهای ظاهراً جدی، زمان را می‌بلعند.",
+      "slug": "how-to-lose-time-and-money",
+      "date": "2026-08-08",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "مدیریت زمان",
+        "بهره‌وری",
+        "سرمایه‌گذاری",
+        "تصمیم‌گیری"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/how-to-lose-time-and-money.jpg",
+      "url": "https://riality.ir/blog/how-to-lose-time-and-money",
+      "path": "/blog/how-to-lose-time-and-money"
+    },
+    {
+      "title": "ثروت چگونه ساخته می‌شود؟ تفاوت پول، ثروت و ارزش‌آفرینی",
+      "description": "ثروت با پول یکسان نیست. بررسی ایده‌های Paul Graham درباره خلق ارزش، کار، اندازه‌گیری عملکرد، اهرم و اینکه چرا استارتاپ‌ها می‌توانند مسیر ساخت ثروت را فشرده کنند.",
+      "slug": "how-to-make-wealth",
+      "date": "2026-08-08",
+      "tags": [
+        "ساخت ثروت",
+        "کارآفرینی",
+        "استارتاپ",
+        "کسب‌وکار",
+        "مهارت"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/how-to-make-wealth.jpg",
+      "url": "https://riality.ir/blog/how-to-make-wealth",
+      "path": "/blog/how-to-make-wealth"
+    },
+    {
+      "title": "زندگی در آینده؛ از AGI و اضطراب هوش مصنوعی تا تایوان و «امپراتوری کالیفرنیا»",
+      "description": "مروری تحلیلی بر گفت‌وگوی Naval با Garry Tan، Daniel Francis و Farbood Nivi درباره شتاب هوش مصنوعی، آینده کار، متن‌باز در برابر مدل‌های بسته، منشأ کووید، چین و تایوان و تناقض‌های کالیفرنیا.",
+      "slug": "live-in-the-future-naval-ai-anxiety-taiwan-california",
+      "date": "2026-08-08",
+      "tags": [
+        "هوش مصنوعی",
+        "AGI",
+        "آینده فناوری",
+        "آینده کار",
+        "چین",
+        "تایوان",
+        "ژئوپلیتیک",
+        "سیلیکون ولی"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/live-in-the-future-naval-ai-anxiety-taiwan-california.jpg",
+      "url": "https://riality.ir/blog/live-in-the-future-naval-ai-anxiety-taiwan-california",
+      "path": "/blog/live-in-the-future-naval-ai-anxiety-taiwan-california"
+    },
+    {
+      "title": "چگونه بدون تکیه بر شانس ثروتمند شویم؟",
+      "description": "بازنویسی فارسی ایده‌های ناوال راویکانت درباره تفاوت ثروت، پول و جایگاه اجتماعی؛ دانش تخصصی، مالکیت، اهرم، مسئولیت‌پذیری و ساختن ارزش در بلندمدت.",
+      "slug": "how-to-get-rich-without-luck",
+      "date": "2026-08-07",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "ساخت ثروت",
+        "کارآفرینی",
+        "مهارت",
+        "سرمایه‌گذاری"
+      ],
+      "authors": [
+        "riality"
+      ],
+      "image": "/img/blog/how-to-get-rich-without-luck.jpg",
+      "url": "https://riality.ir/blog/how-to-get-rich-without-luck",
+      "path": "/blog/how-to-get-rich-without-luck"
+    },
     {
       "title": "۶ گام عملی برای میلیونر شدن با پس‌انداز و سرمایه‌گذاری",
       "description": "خلاصه کاربردی ۶ گام Investopedia برای ساخت ثروت بلندمدت؛ از شروع زودهنگام و سود مرکب تا کنترل بدهی، نرخ پس‌انداز ۱۵٪، افزایش درآمد و مهار تورم سبک زندگی.",
