@@ -11,16 +11,16 @@
 ## Docs
 
 - [شروع سریع](https://riality.ir/docs/intro): معرفی کوتاه ریالیتی و اولین قدم‌ها
-- [صفحه خانه](https://riality.ir/docs/home): آشنایی با تب خانه، وضعیت ماه و خرج آزاد
+- [صفحه خانه](https://riality.ir/docs/home): آشنایی با تب خانه، وضعیت ماه، ثبت امروز و مکث خرید
 - [هدف‌ها](https://riality.ir/docs/goals): پس‌انداز برای ذخیره اضطراری و هدف‌های مشخص
 - [مربی هوشمند](https://riality.ir/docs/ai-coach): راهنمایی محلی و عمیق‌تر آنلاین از تب مربی
 - [تراکنش‌ها](https://riality.ir/docs/history): مشاهده تاریخچه درآمد و هزینه از تب تراکنش‌ها
 - [ثبت تراکنش](https://riality.ir/docs/add-transaction): چگونه درآمد یا هزینه را در ریالیتی ثبت کنیم
-- [برنامه خرج](https://riality.ir/docs/spending-plan): روز حقوق، خرج آزاد و سبد خرید
+- [برنامه خرج](https://riality.ir/docs/spending-plan): روز حقوق، خرج آزاد، سبد خرید و مکث
 - [بودجه مشترک](https://riality.ir/docs/shared-budget): اشتراک بودجه با شریک زندگی یا هم‌خانه
 - [ورود خودکار](https://riality.ir/docs/import): پیشنهاد تراکنش از پیامک یا ایمیل بانکی
-- [امنیت و پین](https://riality.ir/docs/security): قفل پشتیبان با پین و نکات حریم خصوصی
-- [مدیریت داده](https://riality.ir/docs/data-management): پشتیبان‌گیری، خروجی و بازیابی داده‌ها
+- [امنیت](https://riality.ir/docs/security): قفل برنامه با چهره یا اثر انگشت، و پین پشتیبان
+- [تنظیمات](https://riality.ir/docs/data-management): یادآوری، دسته‌ها، پشتیبان، قفل برنامه و بقیه تنظیمات
 - [اشتراک](https://riality.ir/docs/subscription): دوره رایگان، paywall و امکانات اشتراک
 
 ## Blog
@@ -76,6 +76,9 @@
 - [صفحه به‌روزرسانی‌ها](https://riality.ir/roadmap)
 - [کاتالوگ JSON](https://riality.ir/catalog/changelog.json)
 
+- [مکث خرید](https://riality.ir/roadmap#impulse-hold) — قابلیت (05.06.2420): برای خریدهای خواسته می‌توانید به‌جای ذخیره فوری، «اول مکث کن» را بزنید تا تصمیم عجله‌ای نباشد.
+- [ثبت امروز](https://riality.ir/roadmap#daily-habit) — قابلیت (05.06.2420): روی خانه کارت ثبت امروز هست: یک تراکنش ثبت کنید، یا بگویید امروز خرجی نبود.
+- [قفل برنامه](https://riality.ir/roadmap#app-lock) — قابلیت (05.06.2420): می‌توانید بعد از خروج، ورود دوباره را با چهره، اثر انگشت یا رمز گوشی ببندید.
 - [هدف‌ها](https://riality.ir/roadmap#goals) — قابلیت: تب هدف‌ها اضافه شد: ذخیره اضطراری یا یک هدف مشخص با مبلغ و افق زمانی تعریف کنید.
 - [بودجه مشترک](https://riality.ir/roadmap#shared-budget) — قابلیت (05.05.0201): با دعوت QR یا کد، شریک را به بودجه مشترک اضافه کنید؛ نقش مالک و عضو مشخص است.
 - [مربی (آزمایشی)](https://riality.ir/roadmap#ai-coach) — آزمایشی (05.04.2900): در تب مربی، پیشنهادهای کوتاه و مرحله‌به‌مرحله می‌گیرید — نه دیوار متن طولانی.

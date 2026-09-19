@@ -338,7 +338,7 @@ const config: Config = {
               to: '/docs/shared-budget',
             },
             {
-              label: 'امنیت و پین',
+              label: 'امنیت',
               to: '/docs/security',
             },
             {

@@ -1,6 +1,6 @@
 {
   "site": "https://riality.ir",
-  "generatedAt": "2026-09-19T13:24:47.262Z",
+  "generatedAt": "2026-09-19T13:36:30.392Z",
   "count": 12,
   "docs": [
     {
@@ -14,7 +14,7 @@
     {
       "id": "home",
       "title": "صفحه خانه",
-      "description": "آشنایی با تب خانه، وضعیت ماه و خرج آزاد",
+      "description": "آشنایی با تب خانه، وضعیت ماه، ثبت امروز و مکث خرید",
       "url": "https://riality.ir/docs/home",
       "path": "/docs/home",
       "order": 2
@@ -54,7 +54,7 @@
     {
       "id": "spending-plan",
       "title": "برنامه خرج",
-      "description": "روز حقوق، خرج آزاد و سبد خرید",
+      "description": "روز حقوق، خرج آزاد، سبد خرید و مکث",
       "url": "https://riality.ir/docs/spending-plan",
       "path": "/docs/spending-plan",
       "order": 7
@@ -77,16 +77,16 @@
     },
     {
       "id": "security",
-      "title": "امنیت و پین",
-      "description": "قفل پشتیبان با پین و نکات حریم خصوصی",
+      "title": "امنیت",
+      "description": "قفل برنامه با چهره یا اثر انگشت، و پین پشتیبان",
       "url": "https://riality.ir/docs/security",
       "path": "/docs/security",
       "order": 10
     },
     {
       "id": "data-management",
-      "title": "مدیریت داده",
-      "description": "پشتیبان‌گیری، خروجی و بازیابی داده‌ها",
+      "title": "تنظیمات",
+      "description": "یادآوری، دسته‌ها، پشتیبان، قفل برنامه و بقیه تنظیمات",
       "url": "https://riality.ir/docs/data-management",
       "path": "/docs/data-management",
       "order": 11
