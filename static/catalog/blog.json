@@ -1,8 +1,27 @@
 {
   "site": "https://riality.ir",
-  "generatedAt": "2026-09-19T13:14:34.956Z",
-  "count": 38,
+  "generatedAt": "2026-09-19T13:24:47.262Z",
+  "count": 39,
   "posts": [
+    {
+      "title": "چگونه یک سیستم مالی شخصی بسازیم که به انگیزه وابسته نباشد؟",
+      "description": "چطور مدیریت پول را از تصمیم‌های لحظه‌ای جدا کنیم و یک سیستم مالی شخصی بسازیم که با اتوماسیون، قواعد ساده و بازبینی دوره‌ای حتی در روزهای بی‌انگیز هم کار کند.",
+      "slug": "personal-finance-system-without-motivation",
+      "date": "2026-09-19",
+      "tags": [
+        "مدیریت مالی شخصی",
+        "بودجه‌بندی",
+        "پس‌انداز",
+        "عادت مالی",
+        "برنامه‌ریزی مالی"
+      ],
+      "authors": [
+        "name: تیم ریالیتی"
+      ],
+      "image": "/img/blog/personal-finance-system-without-motivation.jpg",
+      "url": "https://riality.ir/blog/personal-finance-system-without-motivation",
+      "path": "/blog/personal-finance-system-without-motivation"
+    },
     {
       "title": "چقدر باید پس‌انداز کنیم؟ یک روش واقع‌بینانه برای تعیین نرخ پس‌انداز",
       "description": "چطور بدون تکیه بر درصدهای ثابت، نرخ پس‌انداز مناسب خودمان را پیدا کنیم؟ یک روش عملی بر اساس درآمد، هزینه‌های ضروری، اهداف مالی و مرحله زندگی.",
