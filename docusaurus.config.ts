@@ -60,7 +60,7 @@ const structuredData = {
           '@type': 'SiteNavigationElement',
           position: 4,
           name: 'وبلاگ',
-          url: `${siteUrl}/blog`,
+          url: `${siteUrl}/blog/`,
         },
         {
           '@type': 'SiteNavigationElement',
@@ -295,7 +295,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          to: '/blog',
+          to: '/blog/',
           label: 'وبلاگ',
           position: 'right',
         },
@@ -352,7 +352,7 @@ const config: Config = {
           items: [
             {
               label: 'همه مطالب',
-              to: '/blog',
+              to: '/blog/',
             },
             {
               label: 'خوراک RSS',

@@ -26,8 +26,8 @@ function BlogListCover(): ReactNode {
 function BlogPostItemHeader(): ReactNode {
   return (
     <header>
-      <BlogListCover />
       <BlogPostItemHeaderTitle />
+      <BlogListCover />
       <BlogPostItemHeaderInfo />
       <BlogPostItemHeaderAuthors />
     </header>

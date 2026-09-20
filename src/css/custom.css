@@ -425,9 +425,10 @@ html[dir='rtl'] .quickLinksTitle {
   margin-bottom: 0;
 }
 
-/* List/tag pages: frontmatter image as the card cover, above the title */
+/* List/tag pages: frontmatter image as the card cover, below the title */
 .blogListCover {
   display: block;
+  margin-top: 0.65rem;
   margin-bottom: 0.85rem;
 }
 
